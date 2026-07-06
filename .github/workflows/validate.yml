@@ -1,0 +1,80 @@
+name: validate
+
+# Plain `pull_request` (never pull_request_target): fork PRs run with a
+# read-only token and no secrets, so untrusted model files can be validated
+# safely. The validation gates are the merge requirement; a maintainer merges.
+on:
+  pull_request:
+    branches: [main]
+    paths: ["models/**", "examples/**", "validation/**"]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # oaklib downloads SQLite ontology DBs (via pystow, cached under ~/.data).
+      # Cache them so gate 4 only pays the download once per requirements change.
+      - name: Cache ontology databases
+        uses: actions/cache@v4
+        with:
+          path: ~/.data
+          key: oaklib-sqlite-${{ hashFiles('validation/requirements.txt') }}
+
+      - name: Install validator dependencies
+        run: pip install -r validation/requirements.txt
+
+      - name: Validate models
+        run: |
+          set -euo pipefail
+          # Always validate the reference examples (a green self-test of the
+          # gates); on a PR, also validate the models it adds/changes.
+          FILES="$(ls examples/*.yaml 2>/dev/null || true)"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch --quiet origin "${{ github.base_ref }}"
+            CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' || true)"
+            FILES="$FILES $CHANGED"
+          else
+            FILES="$FILES $(ls models/*.yaml 2>/dev/null || true)"
+          fi
+          FILES="$(printf '%s\n' $FILES | sed '/^$/d' | sort -u | tr '\n' ' ')"
+          if [ -z "$(printf '%s' "$FILES" | tr -d '[:space:]')" ]; then
+            echo "No models to validate."
+            exit 0
+          fi
+          echo "Validating: $FILES"
+          python validation/validate_model.py $FILES
+
+  # Advisory only (non-blocking): note whether the PR author is a PUBLIC member
+  # of the GO org. Uses the unauthenticated public-members endpoint, so it needs
+  # no secret and works on fork PRs. It never blocks merge — the maintainer's
+  # merge decision is the real membership gate.
+  org-membership-advisory:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check public GO-org membership
+        run: |
+          AUTHOR='${{ github.event.pull_request.user.login }}'
+          CODE=$(curl -s -o /dev/null -w '%{http_code}' \
+            "https://api.github.com/orgs/geneontology/public_members/${AUTHOR}")
+          if [ "$CODE" = "204" ]; then
+            echo "::notice::PR author @${AUTHOR} is a public member of the geneontology org."
+          else
+            echo "::notice::PR author @${AUTHOR} is NOT a public member of the geneontology org (or membership is private). Submissions are only supported from GO-org members; a maintainer will confirm before merge."
+          fi

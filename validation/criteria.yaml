@@ -1,0 +1,38 @@
+# Criteria for the "true GO-CAM" semantic gate (gate 3) and the ontology-term
+# gate (gate 4). Kept as data, not code, so the bar can be loosened later
+# (e.g. add model states, drop a requirement) without touching validate_model.py.
+
+# --- Gate 3: "true GO-CAM" semantics ---
+# A model must have one of these `status` values. Strict for now: production
+# only. To allow work-in-progress later, add e.g. `review`, `development`.
+allowed_statuses:
+  - production
+
+# Require at least one causal relationship between activities (a connected
+# causal graph rather than a bag of isolated activities).
+require_causal_edge: true
+
+# Reject models that contain an activity with no causal connection to any other.
+require_no_orphan_activity: true
+
+# Require at least one evidence item somewhere in the model.
+require_evidence: true
+
+# --- Gate 4: ontology-term validity ---
+# CURIE prefixes treated as ontology terms and checked for existence +
+# non-obsolescence via oaklib (sqlite:obo:<prefix>). Prefixes NOT listed here
+# (gene-product / DB-entity ids like UniProtKB, MGI, PomBase, SGD, WB, and
+# reference ids like PMID) are deliberately skipped — validating those is a
+# separate, harder problem.
+ontology_prefixes:
+  - GO
+  - RO
+  - ECO
+  - CHEBI
+  - UBERON
+  - CL
+  - PO
+# NCBITaxon is intentionally omitted: checking a single taxon id would download
+# the entire multi-GB NCBITaxon database. Taxa are low-risk (rarely obsolete)
+# and are still structurally validated by the LinkML gate. Re-add if wanted,
+# ideally via a lighter taxon check than the full ontology.
