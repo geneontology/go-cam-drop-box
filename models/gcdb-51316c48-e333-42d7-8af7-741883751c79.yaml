@@ -1,0 +1,369 @@
+id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79
+title: 'Example for MF guidelines : Foxo1 regulation of G6pc1 and Pck1 in gluconeogenesis
+  (mouse)'
+taxon: NCBITaxon:10090
+status: production
+date_modified: '2026-07-20'
+activities:
+- id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000882
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8407995
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:95607
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004346
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8407995
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005789
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:8407995
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0006094
+- id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000891
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11792850
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:97501
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004613
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19458124
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005829
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11916968
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0006094
+- id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000877
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:1890077
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0001228
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005634
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0045722
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000880
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002407
+    downstream_activity: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000882
+- id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000886
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:1890077
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0001228
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005634
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0045722
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000889
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11696581
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1813-6857
+        date: '2026-07-20'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1813-6857
+      date: '2026-07-20'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002407
+    downstream_activity: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000891
+molecules:
+- id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000889
+  term: MGI:MGI:97501
+- id: gomodel:gcdb-51316c48-e333-42d7-8af7-741883751c79/6a4e740f00000880
+  term: MGI:MGI:95607
+objects:
+- id: GO:0001228
+  label: DNA-binding transcription activator activity, RNA polymerase II-specific
+  type: gocam:Object
+- id: MGI:MGI:1890077
+  label: Foxo1 Mmus
+  type: gocam:Object
+- id: GO:0005634
+  label: nucleus
+  type: gocam:Object
+- id: MGI:MGI:95607
+  label: G6pc1 Mmus
+  type: gocam:Object
+- id: GO:0045722
+  label: positive regulation of gluconeogenesis
+  type: gocam:Object
+- id: GO:0004346
+  label: glucose-6-phosphatase activity
+  type: gocam:Object
+- id: GO:0005789
+  label: endoplasmic reticulum membrane
+  type: gocam:Object
+- id: GO:0006094
+  label: gluconeogenesis
+  type: gocam:Object
+- id: MGI:MGI:97501
+  label: Pck1 Mmus
+  type: gocam:Object
+- id: GO:0004613
+  label: phosphoenolpyruvate carboxykinase (GTP) activity
+  type: gocam:Object
+- id: GO:0005829
+  label: cytosol
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000305
+  label: curator inference used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0003-1813-6857
+  date: '2026-07-20'
+  provided_by:
+  - http://geneontology.org
