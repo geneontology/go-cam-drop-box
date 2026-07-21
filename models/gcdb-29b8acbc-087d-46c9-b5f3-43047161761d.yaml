@@ -1,0 +1,251 @@
+id: gomodel:gcdb-29b8acbc-087d-46c9-b5f3-43047161761d
+title: Gbeta1-gamma2 (GNB1-GNG2) activation of GIRK2 (KCNJ6) inwardly rectifying potassium
+  channel (Human)
+taxon: NCBITaxon:9606
+status: production
+date_modified: '2026-07-21'
+activities:
+- id: gomodel:gcdb-29b8acbc-087d-46c9-b5f3-43047161761d/6a4e740f00001180
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:104781
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:P48051
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0015467
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:104781
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:104781
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0071805
+- id: gomodel:gcdb-29b8acbc-087d-46c9-b5f3-43047161761d/6a4e740f00001179
+  enabled_by:
+    type: EnabledByProteinComplexAssociation
+    evidence:
+    - term: ECO:0000269
+      reference: PMID:23739333
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0031680
+    has_part:
+    - type: ProteinComplexHasPartAssociation
+      evidence:
+      - term: ECO:0000269
+        reference: PMID:23739333
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-07-21'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+      term: UniProtKB:P59768
+    - type: ProteinComplexHasPartAssociation
+      evidence:
+      - term: ECO:0000269
+        reference: PMID:23739333
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-07-21'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+      term: UniProtKB:P62873
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0015459
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000269
+      reference: PMID:23739333
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000269
+      reference: PMID:23739333
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007186
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:104781
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-29b8acbc-087d-46c9-b5f3-43047161761d/6a4e740f00001185
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:104781
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:gcdb-29b8acbc-087d-46c9-b5f3-43047161761d/6a4e740f00001180
+molecules:
+- id: gomodel:gcdb-29b8acbc-087d-46c9-b5f3-43047161761d/6a4e740f00001185
+  term: UniProtKB:P48051
+objects:
+- id: GO:0015459
+  label: potassium channel regulator activity
+  type: gocam:Object
+- id: GO:0015467
+  label: G-protein activated inward rectifier potassium channel activity
+  type: gocam:Object
+- id: GO:0031680
+  label: G-protein beta/gamma-subunit complex
+  type: gocam:Object
+- id: UniProtKB:P62873
+  label: GNB1 Hsap
+  type: gocam:Object
+- id: UniProtKB:P59768
+  label: GNG2 Hsap
+  type: gocam:Object
+- id: UniProtKB:P48051
+  label: KCNJ6 Hsap
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: GO:0007186
+  label: G protein-coupled receptor signaling pathway
+  type: gocam:Object
+- id: GO:0071805
+  label: potassium ion transmembrane transport
+  type: gocam:Object
+- id: ECO:0000269
+  label: experimental evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0003-1522-9900
+  date: '2026-07-21'
+  provided_by:
+  - http://geneontology.org
+  - https://www.uniprot.org
+
