@@ -187,7 +187,7 @@ activities:
       date: '2026-07-14'
       provided_by:
       - http://geneontology.org
-    term: GO:0120200
+    term: GO:0042622
     part_of:
       type: CellTypeAssociation
       evidence:
@@ -528,8 +528,8 @@ objects:
 - id: ECO:0000315
   label: mutant phenotype evidence used in manual assertion
   type: gocam:Object
-- id: GO:0120200
-  label: rod photoreceptor outer segment
+- id: GO:0042622
+  label: photoreceptor outer segment membrane
   type: gocam:Object
 provenances:
 - contributor:
