@@ -1,0 +1,411 @@
+id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6
+title: Negative regulation of canonical NF-kB via IKIP (Human)
+taxon: NCBITaxon:9606
+status: production
+date_modified: '2026-07-30'
+activities:
+- id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000431
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:27777308
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q9Y6K9
+    part_of:
+    - type: PartOfProteinComplexAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:31826938
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-07-30'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0008385
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0035591
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:27777308
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007249
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:27777308
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000414
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:27777308
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000415
+- id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000415
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:O15111
+    part_of:
+    - type: PartOfProteinComplexAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:31826938
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-07-30'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0008385
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0008384
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007249
+- id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000414
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:O14920
+    part_of:
+    - type: PartOfProteinComplexAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:31826938
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-07-30'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0008385
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0008384
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007249
+- id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000402
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q70UQ0
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0140313
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0043124
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:31826938
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-07-30'
+          provided_by:
+          - http://geneontology.org
+      - term: ECO:0000315
+        reference: PMID:31826938
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-07-30'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0140895
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000404
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000405
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002630
+    downstream_activity: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000415
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31826938
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-07-30'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-07-30'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002630
+    downstream_activity: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000414
+molecules:
+- id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000404
+  term: UniProtKB:O14920
+- id: gomodel:gcdb-f4982c72-7669-456f-b930-5c3ec13bfae6/6a607ed200000405
+  term: UniProtKB:O15111
+objects:
+- id: GO:0140313
+  label: molecular sequestering activity
+  type: gocam:Object
+- id: UniProtKB:Q70UQ0
+  label: IKBIP Hsap
+  type: gocam:Object
+- id: UniProtKB:O14920
+  label: IKBKB Hsap
+  type: gocam:Object
+- id: UniProtKB:O15111
+  label: CHUK Hsap
+  type: gocam:Object
+- id: GO:0043124
+  label: negative regulation of canonical NF-kappaB signal transduction
+  type: gocam:Object
+- id: GO:0140895
+  label: cell surface toll-like receptor signaling pathway
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0008384
+  label: IkappaB kinase activity
+  type: gocam:Object
+- id: GO:0007249
+  label: canonical NF-kappaB signal transduction
+  type: gocam:Object
+- id: ECO:0000305
+  label: curator inference used in manual assertion
+  type: gocam:Object
+- id: GO:0008385
+  label: IkappaB kinase complex
+  type: gocam:Object
+- id: UniProtKB:Q9Y6K9
+  label: IKBKG Hsap
+  type: gocam:Object
+- id: GO:0035591
+  label: signaling adaptor activity
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0002-8075-8625
+  date: '2026-07-30'
+  provided_by:
+  - http://geneontology.org
