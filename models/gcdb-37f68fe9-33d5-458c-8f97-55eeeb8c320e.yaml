@@ -1,8 +1,9 @@
 id: gomodel:gcdb-37f68fe9-33d5-458c-8f97-55eeeb8c320e
-title: Cone opsin(OPN1MW)-transducin coupling (Gb3/g8 adaptor)_Visual Perception (Human)
+title: Cone opsin(OPN1MW)-transducin coupling (Gb3/Gg8 adaptor)_Visual Perception
+  (Human)
 taxon: NCBITaxon:9606
 status: production
-date_modified: '2026-07-29'
+date_modified: '2026-08-18'
 activities:
 - id: gomodel:gcdb-37f68fe9-33d5-458c-8f97-55eeeb8c320e/6a607ed200000238
   enabled_by:
@@ -462,21 +463,21 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - UniProtKB:P62873
+      - MGI:95785
       provenances:
       - contributor:
         - https://orcid.org/0000-0003-1522-9900
-        date: '2026-07-29'
+        date: '2026-08-18'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0003-1522-9900
-      date: '2026-07-29'
+      date: '2026-08-18'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     predicate: RO:0002629
-    downstream_activity: gomodel:gcdb-37f68fe9-33d5-458c-8f97-55eeeb8c320e/6a607ed200000209
+    downstream_activity: gomodel:gcdb-37f68fe9-33d5-458c-8f97-55eeeb8c320e/6a607ed200000238
 molecules:
 - id: gomodel:gcdb-37f68fe9-33d5-458c-8f97-55eeeb8c320e/6a607ed200000252
   term: CHEBI:17898
@@ -550,7 +551,7 @@ objects:
 provenances:
 - contributor:
   - https://orcid.org/0000-0003-1522-9900
-  date: '2026-07-29'
+  date: '2026-08-18'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
