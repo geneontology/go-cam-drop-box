@@ -283,8 +283,44 @@ activities:
 molecules:
 - id: gomodel:gcdb-8478a448-eed7-44b4-9a9c-fb2100c27b9b/6a6ba88c00001511
   term: CHEBI:37739
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42285089
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-09-08'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-09-08'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
 - id: gomodel:gcdb-8478a448-eed7-44b4-9a9c-fb2100c27b9b/6a6ba88c00001510
   term: CHEBI:37739
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42285089
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-09-08'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-09-08'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005789
 objects:
 - id: GO:0120014
   label: phospholipid transfer activity
