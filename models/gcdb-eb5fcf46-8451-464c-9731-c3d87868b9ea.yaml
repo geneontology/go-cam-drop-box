@@ -2,7 +2,7 @@ id: gomodel:gcdb-eb5fcf46-8451-464c-9731-c3d87868b9ea
 title: Interleukin-36 signaling in neutrophils (Mouse)
 taxon: NCBITaxon:10090
 status: production
-date_modified: '2026-09-08'
+date_modified: '2026-09-14'
 activities:
 - id: gomodel:gcdb-eb5fcf46-8451-464c-9731-c3d87868b9ea/6a6ba88c00001639
   enabled_by:
@@ -201,16 +201,34 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-09-08'
+        date: '2026-09-14'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-09-08'
+      date: '2026-09-14'
       provided_by:
       - http://geneontology.org
-    term: GO:0006954
+    term: GO:0019221
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:37317970
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-09-14'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-09-14'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0050729
 - id: gomodel:gcdb-eb5fcf46-8451-464c-9731-c3d87868b9ea/6a6ba88c00001638
   enabled_by:
     type: EnabledByGeneProductAssociation
@@ -391,16 +409,16 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-09-08'
+        date: '2026-09-14'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-09-08'
+      date: '2026-09-14'
       provided_by:
       - http://geneontology.org
-    term: GO:0032731
+    term: GO:0001819
     part_of:
       type: BiologicalProcessAssociation
       evidence:
@@ -409,16 +427,34 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0001-8769-177X
-          date: '2026-09-08'
+          date: '2026-09-14'
           provided_by:
           - http://geneontology.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-09-08'
+        date: '2026-09-14'
         provided_by:
         - http://geneontology.org
-      term: GO:0050729
+      term: GO:0019221
+      part_of:
+        type: BiologicalProcessAssociation
+        evidence:
+        - term: ECO:0000305
+          reference: PMID:37317970
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0001-8769-177X
+            date: '2026-09-14'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-09-14'
+          provided_by:
+          - http://geneontology.org
+        term: GO:0050729
   molecular_associations:
   - type: MoleculeAssociation
     evidence:
@@ -555,18 +591,6 @@ objects:
 - id: CL:0000775
   label: neutrophil
   type: gocam:Object
-- id: GO:0032755
-  label: positive regulation of interleukin-6 production
-  type: gocam:Object
-- id: GO:0032731
-  label: positive regulation of interleukin-1 beta production
-  type: gocam:Object
-- id: GO:0032760
-  label: positive regulation of tumor necrosis factor production
-  type: gocam:Object
-- id: GO:0006954
-  label: inflammatory response
-  type: gocam:Object
 - id: ECO:0000314
   label: direct assay evidence used in manual assertion
   type: gocam:Object
@@ -582,11 +606,13 @@ objects:
 - id: GO:0050729
   label: positive regulation of inflammatory response
   type: gocam:Object
+- id: GO:0001819
+  label: positive regulation of cytokine production
+  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0001-8769-177X
-  date: '2026-09-08'
+  date: '2026-09-14'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
-

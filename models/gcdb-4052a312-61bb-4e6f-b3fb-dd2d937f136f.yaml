@@ -2,7 +2,7 @@ id: gomodel:gcdb-4052a312-61bb-4e6f-b3fb-dd2d937f136f
 title: IL-36 signaling in dendritic cell & T cell activation (Mouse)
 taxon: NCBITaxon:10090
 status: production
-date_modified: '2026-09-08'
+date_modified: '2026-09-14'
 activities:
 - id: gomodel:gcdb-4052a312-61bb-4e6f-b3fb-dd2d937f136f/6a6ba88c00001745
   enabled_by:
@@ -296,16 +296,16 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-09-08'
+        date: '2026-09-14'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-8769-177X
-      date: '2026-09-08'
+      date: '2026-09-14'
       provided_by:
       - http://geneontology.org
-    term: GO:0032747
+    term: GO:0002277
     part_of:
       type: BiologicalProcessAssociation
       evidence:
@@ -314,16 +314,34 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0001-8769-177X
-          date: '2026-09-08'
+          date: '2026-09-14'
           provided_by:
           - http://geneontology.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-8769-177X
-        date: '2026-09-08'
+        date: '2026-09-14'
         provided_by:
         - http://geneontology.org
-      term: GO:0050729
+      term: GO:0019221
+      part_of:
+        type: BiologicalProcessAssociation
+        evidence:
+        - term: ECO:0000305
+          reference: PMID:21705523
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0001-8769-177X
+            date: '2026-09-14'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-09-14'
+          provided_by:
+          - http://geneontology.org
+        term: GO:0050729
 - id: gomodel:gcdb-4052a312-61bb-4e6f-b3fb-dd2d937f136f/6a6ba88c00001748
   enabled_by:
     type: EnabledByGeneProductAssociation
@@ -592,21 +610,6 @@ objects:
 - id: CL:0000624
   label: CD4-positive, alpha-beta T cell
   type: gocam:Object
-- id: GO:0032755
-  label: positive regulation of interleukin-6 production
-  type: gocam:Object
-- id: GO:0032735
-  label: positive regulation of interleukin-12 production
-  type: gocam:Object
-- id: GO:0032760
-  label: positive regulation of tumor necrosis factor production
-  type: gocam:Object
-- id: GO:0032747
-  label: positive regulation of interleukin-23 production
-  type: gocam:Object
-- id: GO:0002277
-  label: myeloid dendritic cell activation involved in immune response
-  type: gocam:Object
 - id: GO:0045627
   label: positive regulation of T-helper 1 cell differentiation
   type: gocam:Object
@@ -625,11 +628,13 @@ objects:
 - id: GO:0050729
   label: positive regulation of inflammatory response
   type: gocam:Object
+- id: GO:0002277
+  label: myeloid dendritic cell activation involved in immune response
+  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0001-8769-177X
-  date: '2026-09-08'
+  date: '2026-09-14'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
-
