@@ -1,0 +1,235 @@
+id: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782
+title: PGC-1a -> HNF4A -> G6PC1 gluconeogenesis triple (RAT)
+taxon: NCBITaxon:10116
+status: production
+date_modified: '2026-07-21'
+comments:
+- 'General: IDA anchor for rat HNF4A (endogenous, H4IIE) at the G6Pase HNF4 response
+  element; PGC-1a ISS-from-mouse. Trans-species IDA support for HNF4A ISS in gomodel:6a4e740f00000268
+  (human) and gomodel:6a4e740f00000912 (mouse). PMID:17024043'
+activities:
+- id: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001072
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: PMID:17024043
+      with_objects:
+      - MGI:MGI:1342774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: RGD:620925
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0003713
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: PMID:17024043
+      with_objects:
+      - MGI:MGI:1342774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005634
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: PMID:17024043
+      with_objects:
+      - MGI:MGI:1342774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0006111
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: PMID:17024043
+      with_objects:
+      - MGI:MGI:1342774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001161
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: PMID:17024043
+      with_objects:
+      - MGI:MGI:1342774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001076
+- id: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001076
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17024043
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: RGD:2810
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0001228
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17024043
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005634
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17024043
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0006111
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17024043
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8534-6582
+        date: '2026-07-21'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8534-6582
+      date: '2026-07-21'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001163
+molecules:
+- id: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001161
+  term: RGD:2810
+- id: gomodel:gcdb-30df8e17-5470-4f62-9891-545b13bbe782/6a4e740f00001163
+  term: RGD:2644
+objects:
+- id: GO:0003713
+  label: transcription coactivator activity
+  type: gocam:Object
+- id: GO:0005634
+  label: nucleus
+  type: gocam:Object
+- id: GO:0006111
+  label: regulation of gluconeogenesis
+  type: gocam:Object
+- id: GO:0001228
+  label: DNA-binding transcription activator activity, RNA polymerase II-specific
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: RGD:620925
+  label: Ppargc1a Rnor
+  type: gocam:Object
+- id: RGD:2810
+  label: Hnf4a Rnor
+  type: gocam:Object
+- id: RGD:2644
+  label: G6pc1 Rnor
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0002-8534-6582
+  - https://orcid.org/0000-0003-1813-6857
+  date: '2026-07-21'
+  provided_by:
+  - http://geneontology.org
+  - http://greekc.org
+
