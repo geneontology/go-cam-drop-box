@@ -41,11 +41,12 @@ jobs:
         run: |
           set -euo pipefail
           # Always validate the reference examples (a green self-test of the
-          # gates); on a PR, also validate the models it adds/changes.
+          # gates); on a PR, also validate the models it adds/changes (deletions,
+          # e.g. a promotion batch leaving the box, have nothing to validate).
           FILES="$(ls examples/*.yaml 2>/dev/null || true)"
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git fetch --quiet origin "${{ github.base_ref }}"
-            CHANGED="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' || true)"
+            CHANGED="$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' || true)"
             FILES="$FILES $CHANGED"
           else
             FILES="$FILES $(ls models/*.yaml 2>/dev/null || true)"
