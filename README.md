@@ -7,7 +7,8 @@ GO-CAM / Noctua workflows by a mechanism that is **still to be designed** (see
 "Status" below).
 
 > **Status: early / forming.** The contract and the CI gates below are real and
-> working, but the promotion path into production is not yet built, and details
+> working; the promotion path into production is being built up batch by batch
+> (first batch 2026-09-24 — see [PROMOTIONS.md](PROMOTIONS.md)), and details
 > may still change.
 
 ## What a submission looks like
