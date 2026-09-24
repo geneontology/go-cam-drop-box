@@ -5,3 +5,5 @@ linkml==1.10.0
 oaklib==0.7.4
 PyYAML>=6.0
 pronto>=2.5.0  # force a Python-3.10+-compatible pronto (oaklib otherwise resolves ancient 0.12.2)
+rdflib>=7.0
+requests>=2.31
