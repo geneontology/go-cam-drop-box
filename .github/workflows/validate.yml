@@ -69,6 +69,9 @@ jobs:
             CHANGED="$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' 'models/*.ttl' \
                        | sed -E 's/\.ttl$/.yaml/' | sort -u || true)"
             FILES="$FILES $CHANGED"
+            # Files this PR ADDS (not merely modifies): a new legacy-style YAML is rejected.
+            NEW_FILES="$(git diff --name-only --diff-filter=A "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' || true)"
+            export NEW_FILES
           else
             FILES="$FILES $(ls models/*.yaml 2>/dev/null || true)"
           fi
