@@ -39,6 +39,12 @@ optional, and they must agree exactly — CI compares them.
   QC queries fetched as in the README).
 - Fork `geneontology/go-cam-drop-box`, add both files on a branch, commit, open
   the PR, and say in the PR what the model represents and its dev id.
+- **Work in progress is a draft PR**, not a model state. If the curator says the
+  model is not final (more curation coming, a review meeting pending), open the
+  PR with `gh pr create --draft`; CI still runs and the work is safely saved,
+  but it is not a request for merge. When it is final, `gh pr ready <number>`.
+  Model state (`development`, `production`, ...) is the model's state in
+  Noctua and travels as set; do not use it to signal readiness.
 
 ## Don't
 

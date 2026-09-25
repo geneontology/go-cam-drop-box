@@ -30,6 +30,10 @@ A submission is **one model in two formats, with the same id**:
   `production`, ...; anything but `delete`) and is the same in both files.
   Half-finished experiments are still rejected by the structural gates.
 
+**Work in progress** goes in as a **draft PR** (CI runs, nothing merges until
+it is marked ready); the model's state is the model's state in Noctua, not a
+readiness flag.
+
 Older submissions used client-minted `gomodel:gcdb-<UUID>` ids and had no TTL.
 Those files still validate (with a warning) but cannot be promoted until they
 are re-exported from noctua-dev as an id-matched pair.

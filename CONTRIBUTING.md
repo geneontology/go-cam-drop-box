@@ -24,7 +24,10 @@ gated by automated checks plus a maintainer review.
    ```
 3. **Fork** `geneontology/go-cam-drop-box`, clone your fork, create a branch,
    add both files, commit, and open a PR against `main`. Briefly describe what
-   the model represents.
+   the model represents. **Not final yet?** Open it as a **draft PR**: CI still
+   runs and your work is safely in the drop box, but nobody will merge it until
+   you mark it ready. The model's state (`development`, `production`, ...) is
+   about the model in Noctua, not about whether the PR is ready.
 4. **Fixes go through noctua-dev.** If CI or review asks for a change, make it
    on the dev model and re-export both files; do not edit either file by hand.
 
