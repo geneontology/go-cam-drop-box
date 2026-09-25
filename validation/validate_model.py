@@ -273,7 +273,22 @@ def validate_file(path: Path, criteria: dict) -> bool:
     ]
     is_legacy = str(doc.get("id", "")).startswith("gomodel:gcdb-")
     has_ttl = path.with_suffix(".ttl").exists()
-    if has_ttl or (criteria.get("require_companion_ttl") and path.parent.name == "models" and not is_legacy):
+    # Files added by this PR (CI passes them in NEW_FILES, one path per line).
+    # A brand-new legacy-style submission is not grandfathered: it almost
+    # certainly came from a session still running the pre-2026-09-24 save skill.
+    new_files = {p for p in os.environ.get("NEW_FILES", "").split() if p}
+    is_new = str(path) in new_files or path.as_posix() in new_files
+    if is_legacy and is_new and path.parent.name == "models":
+        g = GateResult("companion TTL")
+        g.error(
+            "new submission uses the retired gcdb- id form and has no TTL. Since 2026-09-24 a "
+            "submission is <noctua-dev id>.yaml + <noctua-dev id>.ttl exported from the stored "
+            "dev model. This usually means the save ran in a Claude session started before the "
+            "skill update: exit that session, start `claude` again, and ask it to save the model "
+            "to the drop box again."
+        )
+        gates.append(g)
+    elif has_ttl or (criteria.get("require_companion_ttl") and path.parent.name == "models" and not is_legacy):
         gates.extend(gates_ttl(path, doc, criteria))
     elif is_legacy and path.parent.name == "models":
         g = GateResult("companion TTL")
