@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """Validate a submitted go-cam-drop-box model against the four merge gates:
 
-  1. identifier & filename   (gomodel:gcdb-<UUID>, file matches id)
+  1. identifier & filename   (gomodel:<id>, file matches id; the id is the noctua-dev
+                              minted id, e.g. gomodel:6ab067da00000569; legacy
+                              gomodel:gcdb-<UUID> ids are still accepted for old files)
   2. LinkML schema conformance   (linkml-validate against the pinned gocam schema)
   3. "true GO-CAM" semantics   (modular, from validation/criteria.yaml)
   4. ontology-term validity   (oaklib: terms exist and are not obsolete)
+  5. companion TTL            (models/<id>.ttl exists, parses, same id, same state)
+  6. YAML <-> TTL agreement   (same activities, terms, edges, evidence)
+  7. noctua-models SPARQL QC battery over the TTL (validation/sparql/*.rq)
+
+Gates 5-7 apply to files under models/ (see validation/ttl_checks.py).
 
 Usage:
-    python validation/validate_model.py models/gcdb-<UUID>.yaml [more.yaml ...]
+    python validation/validate_model.py models/<id>.yaml [more.yaml ...]
 
 Exit code 0 iff every gate passes for every file. Each gate is independent so
 the bar can be tightened/loosened via criteria.yaml without touching this file.
@@ -24,10 +31,14 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 HERE = Path(__file__).resolve().parent
 CRITERIA_PATH = HERE / "criteria.yaml"
 
-ID_RE = re.compile(r"^gomodel:gcdb-(?P<uuid>[0-9a-fA-F-]{36})$")
+# Primary form: the noctua-dev minted id (16 lowercase hex). Legacy form: gcdb-<UUID>
+# (client-minted staging ids used before 2026-09-24; kept so old files still validate).
+ID_RE = re.compile(r"^gomodel:(?P<local>(?P<hex>[0-9a-f]{16})|gcdb-(?P<uuid>[0-9a-fA-F-]{36}))$")
 CURIE_RE = re.compile(r"^(?P<prefix>[A-Za-z][A-Za-z0-9]*):[^\s]+$")
 
 
@@ -62,13 +73,18 @@ def gate_identifier(path: Path, doc: dict) -> GateResult:
         return r
     m = ID_RE.match(str(model_id))
     if not m:
-        r.error(f"id {model_id!r} must match 'gomodel:gcdb-<UUID>'")
+        r.error(
+            f"id {model_id!r} must be the model's noctua-dev id, 'gomodel:<16 hex>' "
+            "(e.g. gomodel:6ab067da00000569); legacy 'gomodel:gcdb-<UUID>' is accepted for old files"
+        )
         return r
-    try:
-        uuid.UUID(m.group("uuid"))
-    except ValueError:
-        r.error(f"id {model_id!r} does not contain a valid UUID")
-    expected_stem = str(model_id).split(":", 1)[1]  # 'gcdb-<UUID>'
+    if m.group("uuid"):
+        try:
+            uuid.UUID(m.group("uuid"))
+        except ValueError:
+            r.error(f"id {model_id!r} does not contain a valid UUID")
+        r.warn("legacy gcdb- id: new submissions use the noctua-dev id shared by the YAML and its TTL")
+    expected_stem = m.group("local")
     if path.stem != expected_stem:
         r.error(
             f"filename stem {path.stem!r} must equal the id local part "
@@ -203,6 +219,39 @@ def gate_terms(doc: dict, criteria: dict) -> GateResult:
     return r
 
 
+# --- Gates 5-7: the companion TTL -------------------------------------------
+def gates_ttl(path: Path, doc: dict, criteria: dict) -> list[GateResult]:
+    from ttl_checks import check_agreement, check_companion, run_sparql_battery
+
+    g5 = GateResult("companion TTL (exists, parses, same id and state)")
+    g6 = GateResult("YAML <-> TTL agreement")
+    g7 = GateResult("noctua-models SPARQL QC battery (TTL)")
+    errors, warnings, t = check_companion(doc, path.with_suffix(".ttl"))
+    for e in errors:
+        g5.error(e)
+    for w in warnings:
+        g5.warn(w)
+    if t is None:
+        g6.error("skipped: no usable companion TTL")
+        g7.error("skipped: no usable companion TTL")
+        return [g5, g6, g7]
+    problems, notes = check_agreement(doc, t)
+    for p in problems:
+        g6.error(p)
+    for n in notes:
+        g6.warn(n)
+    qdir = HERE / criteria.get("sparql_query_dir", "sparql")
+    errors, warnings = run_sparql_battery(t, qdir)
+    for e in errors:
+        g7.error(e)
+    for w in warnings:
+        if criteria.get("sparql_required", True):
+            g7.error(w)
+        else:
+            g7.warn(w)
+    return [g5, g6, g7]
+
+
 # --- driver ----------------------------------------------------------------
 def validate_file(path: Path, criteria: dict) -> bool:
     print(f"\n=== {path} ===")
@@ -222,6 +271,14 @@ def validate_file(path: Path, criteria: dict) -> bool:
         gate_true_gocam(doc, criteria),
         gate_terms(doc, criteria),
     ]
+    is_legacy = str(doc.get("id", "")).startswith("gomodel:gcdb-")
+    has_ttl = path.with_suffix(".ttl").exists()
+    if has_ttl or (criteria.get("require_companion_ttl") and path.parent.name == "models" and not is_legacy):
+        gates.extend(gates_ttl(path, doc, criteria))
+    elif is_legacy and path.parent.name == "models":
+        g = GateResult("companion TTL")
+        g.warn("legacy gcdb- submission without a TTL (pre-2026-09-24); cannot be promoted until re-exported from noctua-dev as an id-matched YAML + TTL pair")
+        gates.append(g)
     all_ok = True
     for g in gates:
         status = "PASS" if g.ok else "FAIL"
@@ -236,7 +293,7 @@ def validate_file(path: Path, criteria: dict) -> bool:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Validate go-cam-drop-box model files.")
-    ap.add_argument("models", nargs="+", help="model YAML file(s) to validate")
+    ap.add_argument("models", nargs="+", help="model YAML file(s) to validate (the companion .ttl is found by name)")
     args = ap.parse_args()
     criteria = load_criteria()
     results = [validate_file(Path(p), criteria) for p in args.models]

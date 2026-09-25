@@ -37,16 +37,35 @@ jobs:
       - name: Install validator dependencies
         run: pip install -r validation/requirements.txt
 
+      # Gate 7 runs noctua-models' own QC queries over the submitted TTL. Fetch
+      # them at run time (never vendor them) so the drop-box and noctua-models
+      # cannot drift. GITHUB_TOKEN is read-only and only lifts the API rate limit.
+      - name: Fetch the noctua-models SPARQL QC battery
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p validation/sparql
+          for u in $(gh api repos/geneontology/noctua-models/contents/sparql --jq '.[] | select(.name|endswith(".rq")) | .download_url'); do
+            curl -sfO --output-dir validation/sparql "$u"
+          done
+          ls -1 validation/sparql
+          [ "$(ls validation/sparql/*.rq | wc -l)" -ge 1 ]
+
       - name: Validate models
         run: |
           set -euo pipefail
-          # Always validate the reference examples (a green self-test of the
-          # gates); on a PR, also validate the models it adds/changes (deletions,
-          # e.g. a promotion batch leaving the box, have nothing to validate).
+          # Always validate the reference examples (a green self-test of all
+          # gates, including the TTL gates on the example pair); on a PR, also
+          # validate the models it adds/changes (deletions, e.g. a promotion
+          # batch leaving the box, have nothing to validate).
           FILES="$(ls examples/*.yaml 2>/dev/null || true)"
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             git fetch --quiet origin "${{ github.base_ref }}"
-            CHANGED="$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' || true)"
+            # A submission is a YAML + TTL pair; a change to either file re-validates
+            # the pair (the validator finds the .ttl by name from the .yaml path).
+            CHANGED="$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' 'models/*.ttl' \
+                       | sed -E 's/\.ttl$/.yaml/' | sort -u || true)"
             FILES="$FILES $CHANGED"
           else
             FILES="$FILES $(ls models/*.yaml 2>/dev/null || true)"

@@ -36,3 +36,15 @@ ontology_prefixes:
 # the entire multi-GB NCBITaxon database. Taxa are low-risk (rarely obsolete)
 # and are still structurally validated by the LinkML gate. Re-add if wanted,
 # ideally via a lighter taxon check than the full ontology.
+
+# --- Gates 5-7: the companion TTL (added 2026-09-24) ---
+# Every submission under models/ is a PAIR: <id>.yaml and <id>.ttl with the same
+# model id (the noctua-dev minted id). The TTL is the artifact that is promoted
+# into noctua-models; the YAML is the review/validation surface.
+require_companion_ttl: true
+# Directory (relative to validation/) holding the noctua-models QC queries. CI
+# fetches them from geneontology/noctua-models/sparql at run time so the two
+# repos cannot drift; it is gitignored here.
+sparql_query_dir: sparql
+# If the queries are absent, fail (true) rather than warn (false).
+sparql_required: true
