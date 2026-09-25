@@ -3,10 +3,12 @@ name: validate
 # Plain `pull_request` (never pull_request_target): fork PRs run with a
 # read-only token and no secrets, so untrusted model files can be validated
 # safely. The validation gates are the merge requirement; a maintainer merges.
+# No path filter: `validate` is the required status check, so it must report on
+# every PR (a docs-only PR would otherwise be unmergeable). The examples-only
+# run is quick.
 on:
   pull_request:
     branches: [main]
-    paths: ["models/**", "examples/**", "validation/**"]
   push:
     branches: [main]
   workflow_dispatch:
