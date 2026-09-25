@@ -3,10 +3,17 @@
 # (e.g. add model states, drop a requirement) without touching validate_model.py.
 
 # --- Gate 3: "true GO-CAM" semantics ---
-# A model must have one of these `status` values. Strict for now: production
-# only. To allow work-in-progress later, add e.g. `review`, `development`.
+# The model's state is the curator's call and is respected as set on noctua-dev
+# (kltm, 2026-09-24): a model can legitimately stay in development until its
+# source of truth moves. Any real state is accepted except `delete`; gate 5
+# still requires the TTL's lego:modelstate to equal the YAML status.
 allowed_statuses:
   - production
+  - development
+  - review
+  - internal_test
+  - closed
+  - template
 
 # Require at least one causal relationship between activities (a connected
 # causal graph rather than a bag of isolated activities).

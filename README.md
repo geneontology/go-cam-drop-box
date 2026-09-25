@@ -1,6 +1,6 @@
 # go-cam-drop-box
 
-A staging "drop box" where GO curators submit **complete, production-worthy
+A staging "drop box" where GO curators submit **complete
 GO-CAM models** as pull requests. Every submission is validated by CI before a
 maintainer merges it. Merged models are copied into
 [`noctua-models`](https://github.com/geneontology/noctua-models) during a Noctua
@@ -25,8 +25,10 @@ A submission is **one model in two formats, with the same id**:
 - **Both files come from the same stored state of the same dev model.** Build
   (or fix) the model on noctua-dev, store it, set its state, then export both.
   Do not hand-edit either file; edit the model on noctua-dev and re-export.
-- **The model must be complete and production-worthy** (`production` state in
-  both files). Half-finished experiments are rejected.
+- **The model must be complete**: a connected causal graph with evidence. Its
+  **state is whatever the curator set on noctua-dev** (`development`,
+  `production`, ...; anything but `delete`) and is the same in both files.
+  Half-finished experiments are still rejected by the structural gates.
 
 Older submissions used client-minted `gomodel:gcdb-<UUID>` ids and had no TTL.
 Those files still validate (with a warning) but cannot be promoted until they
@@ -39,8 +41,8 @@ A PR can only be merged once **all** of these pass for each added/changed pair:
 1. **Identifier & filename.** `id` is `gomodel:<16 hex>` (the dev id), both
    filenames match it, and the id is unique within `models/`.
 2. **LinkML schema conformance** of the YAML against the pinned gocam-py schema.
-3. **"True GO-CAM" semantics** (YAML): `production` status, a connected causal
-   graph, no orphan activities, evidence present.
+3. **"True GO-CAM" semantics** (YAML): a connected causal graph, no orphan
+   activities, evidence present, and a real model state (any but `delete`).
    [`validation/criteria.yaml`](validation/criteria.yaml) holds the knobs.
 4. **Ontology-term validity** (YAML): every GO/RO/ECO/CHEBI/CL/UBERON/PO term
    exists and is not obsolete (oaklib).
@@ -64,8 +66,8 @@ python validation/validate_model.py models/<id>.yaml     # finds models/<id>.ttl
 
 ## Getting the two files from noctua-dev
 
-With the model stored on noctua-dev as `gomodel:<id>` and its state set to
-`production` (`barista update-metadata --model <id> --state production`):
+With the model stored on noctua-dev as `gomodel:<id>` (its state is left as the
+curator set it; `barista update-metadata --model <id> --state ...` changes it):
 
 ```sh
 # YAML (gocam-py, via noctua-py)

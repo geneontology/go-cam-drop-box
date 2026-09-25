@@ -7,7 +7,8 @@ gated by automated checks plus a maintainer review.
 ## Before you start
 
 - A **GitHub account** that is a member of the GO organization.
-- Your model built and **stored on noctua-dev**, with state `production`. The
+- Your model built and **stored on noctua-dev**, in whatever state you consider
+  right for it (`development` is fine; `delete` is refused). The
   id minerva gave it there (`gomodel:<16 hex>`) is the model's id here and in
   production. AI agents: see [CLAUDE.md](CLAUDE.md).
 
