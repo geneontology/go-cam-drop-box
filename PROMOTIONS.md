@@ -37,12 +37,43 @@ Removed from `models/` here by the batch's removal PR. Later removal from produc
 is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so
 a revert of `ec35b471` conflicts).
 
+## Batch 2026-10-08 (noctua outage, noctua#1136)
+
+Sixteen models, the first batch under the YAML + TTL pair convention
+(go-cam-drop-box#25): the TTL in each submission is what was promoted, under
+its dev-minted id, with no change to the file. `lego:modelstate` is
+`development` for all sixteen. Preflight on the batch: SHA256SUMS verified, no
+id collision with `noctua-models`, import + dump clean on the outage's
+minerva-cli, `noctua-models` QC battery 0 rows. Added to `noctua-models` as one
+commit (`591f99ae`) and re-serialised by the outage's journal flush
+(`9619f04a`); production Noctua serves each id (`state=development`). Five of
+the sixteen are the legacy recoveries listed below.
+
+| drop-box PR | noctua-models id | modelstate | title |
+|---|---|---|---|
+| #31 | `gomodel:6ab067da00001730` | development | Endocytosis in IAV entry via TRIM62-WASH (Human-IAV) |
+| #32 | `gomodel:6ab067da00001778` | development | TIP39-PTH2R signaling, keratinocyte differentiation (Human) |
+| #34 | `gomodel:6ab067da00005685` | development | Autophagosome assembly via ATG2A lipid transfer (Human) |
+| #35 | `gomodel:6ab067da00005862` | development | autophagosome assembly via ATG2A phosphatidylserine transfer (Human) |
+| #36 | `gomodel:6ab067da00005793` | development | lysosomal membrane repair via PS-stimulated ATG2A lipid transfer (Human) |
+| #37 | `gomodel:6ab067da00006156` | development | Restored_Example for MF guidelines : Foxo1 regulation of G6pc1 and Pck1 in gluconeogenesis (mouse) |
+| #38 | `gomodel:6ab067da00006193` | development | nsp8 suppression of TRIM4-MDA5 signaling (Human-SARS-CoV-2) |
+| #39 | `gomodel:6ab067da00002140` | development | Calcitonin-CTR-Gs/PKA inhibition of osteoclast bone resorption (Human) |
+| #40 | `gomodel:6ab067da00006230` | development | Lipid storage via ATG2A-mediated diacylglycerol transfer to DGAT2 on lipid droplets (Human) |
+| #42 | `gomodel:6ab067da00001588` | development | Interleukin-36 beta (IL36B) receptor signaling via IL1RL2-IL1RAP (Human) |
+| #43 | `gomodel:6ab067da00001660` | development | Intermembrane phospholipid transfer at ER-PM via VPS13A-XK (Human) |
+| #44 | `gomodel:6ab067da00001694` | development | DYRK1A phosphorylates CDKL5 to promote its nuclear export and cytoplasmic kinase activity (Hsap, ISS from mouse; PMID:27840050, PMID:30266824) |
+| #45 | `gomodel:6ab067da00001712` | development | DYRK1A phosphorylates CDKL5 on Ser-308 to promote its cytoplasmic localization (Mmus, PMID:27840050) |
+| #46 | `gomodel:6a6ba88c00001800` | development | IL-36R defense response to Gram-negative bacterium (Mouse) |
+| #47 | `gomodel:6ab067da00005631` | development | UTS2-induced vascular SMC proliferation via RHOA-ROCK2 (Human) |
+| #48 | `gomodel:6ab067da00006447` | development | ATG2A transfers phosphatidylinositol to ATG9A vesicles for PI3P synthesis in autophagosome assembly (Human) |
+
 ## Legacy `gcdb-` recoveries (go-cam-drop-box#29)
 
 Merged legacy YAML-only submissions rebuilt on noctua-dev from the merged YAML,
 stored, and re-submitted as YAML + TTL pairs under their dev ids. Content was
 verified identical to the merged YAML (activities, terms, causal edges,
-molecules, evidence). Not yet promoted.
+molecules, evidence). Promoted in the batch of 2026-10-08 above.
 
 | old drop-box id | drop-box PR | new id | title |
 |---|---|---|---|
