@@ -50,3 +50,4 @@ molecules, evidence). Not yet promoted.
 | `gcdb-6a3a464f-87d2-40ef-9aae-a0cb309bda69` | #18 | `gomodel:6ab067da00001588` | Interleukin-36 beta (IL36B) receptor signaling via IL1RL2-IL1RAP (Human) |
 | `gcdb-8478a448-eed7-44b4-9a9c-fb2100c27b9b` | #19 | `gomodel:6ab067da00001660` | Intermembrane phospholipid transfer at ER-PM via VPS13A-XK (Human) |
 | `gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e` | #5 | `gomodel:6ab067da00001694` | DYRK1A phosphorylates CDKL5 to promote its nuclear export and cytoplasmic kinase activity (Hsap, ISS from mouse; PMID:27840050, PMID:30266824) |
+| `gcdb-bafd07d4-3d55-41cd-a9bf-1fb1fb5470e9` | #4 | `gomodel:6ab067da00001712` | DYRK1A phosphorylates CDKL5 on Ser-308 to promote its cytoplasmic localization (Mmus, PMID:27840050) |
