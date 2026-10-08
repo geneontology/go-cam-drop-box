@@ -24,6 +24,25 @@ jobs:
         with:
           fetch-depth: 0
 
+      # A submission touches only models/<id>.yaml and models/<id>.ttl. Anything
+      # else (PROMOTIONS.md, README, this workflow) is written by the promotion
+      # PRs (branch promoted-*) or repo maintenance (branch admin-*). Concurrent
+      # submissions editing a shared file collide at the same lines (#50).
+      - name: Submission scope (models/ only)
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          case "${{ github.head_ref }}" in promoted-*|admin-*) echo "maintenance branch; scope check skipped"; exit 0;; esac
+          git fetch --quiet origin "${{ github.base_ref }}"
+          OUTSIDE="$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" | grep -v -E '^models/[^/]+\.(yaml|ttl)$' || true)"
+          if [ -n "$OUTSIDE" ]; then
+            echo "::error::A submission PR may change only models/<id>.yaml and models/<id>.ttl. This PR also changes:"
+            printf '  %s\n' $OUTSIDE
+            echo "Provenance for a recovered model goes in the TTL as a model comment (CONTRIBUTING.md); PROMOTIONS.md is written by the promotion PR."
+            exit 1
+          fi
+          echo "scope ok: models/ only"
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
