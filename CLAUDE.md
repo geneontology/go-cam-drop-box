@@ -38,7 +38,12 @@ optional, and they must agree exactly — CI compares them.
 - Self-check: `python validation/validate_model.py models/<id>.yaml` (with the
   QC queries fetched as in the README).
 - Fork `geneontology/go-cam-drop-box`, add both files on a branch, commit, open
-  the PR, and say in the PR what the model represents and its dev id.
+  the PR, and say in the PR what the model represents and its dev id. The PR
+  contains **only** `models/<id>.yaml` and `models/<id>.ttl`; CI refuses
+  anything else.
+- Recovering a legacy `gcdb-` submission? Record it **in the model**, as a
+  model comment on dev: `Recovered from go-cam-drop-box gcdb-<UUID> (PR #N)`.
+  The promotion PR turns that into the `PROMOTIONS.md` row.
 - **Work in progress is a draft PR**, not a model state. If the curator says the
   model is not final (more curation coming, a review meeting pending), open the
   PR with `gh pr create --draft`; CI still runs and the work is safely saved,
@@ -55,3 +60,6 @@ optional, and they must agree exactly — CI compares them.
   current.
 - Don't submit against the Noctua **production** server; this is the staging
   path into production.
+- Don't edit `PROMOTIONS.md`, the README, or anything outside `models/` in a
+  submission PR. Concurrent submissions editing one shared file conflict at the
+  same lines (five did on 2026-10-08); the promotion PR is the only writer.

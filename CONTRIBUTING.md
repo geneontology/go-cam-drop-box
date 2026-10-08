@@ -24,7 +24,9 @@ gated by automated checks plus a maintainer review.
    ```
 3. **Fork** `geneontology/go-cam-drop-box`, clone your fork, create a branch,
    add both files, commit, and open a PR against `main`. Briefly describe what
-   the model represents. **Not final yet?** Open it as a **draft PR**: CI still
+   the model represents. **The PR changes only those two files**: CI refuses a
+   submission that touches anything else (`PROMOTIONS.md`, the README, the
+   workflow), because concurrent submissions editing a shared file collide. **Not final yet?** Open it as a **draft PR**: CI still
    runs and your work is safely in the drop box, but nobody will merge it until
    you mark it ready. The model's state (`development`, `production`, ...) is
    about the model in Noctua, not about whether the PR is ready.
@@ -44,6 +46,19 @@ Merged pairs are copied into `noctua-models` during a Noctua maintenance outage
 and become production models **under the same id**; the pair is then removed
 from `models/` and recorded in [`PROMOTIONS.md`](PROMOTIONS.md). Once merged,
 the drop box is the source of truth for that model until it is promoted.
+
+## Provenance a submission wants recorded
+
+Put it in the model, not in this repo's files. A model recovered from a legacy
+YAML-only submission carries, as a model-level comment set on noctua-dev
+(`barista update-metadata --add --comment "..."`), exactly:
+
+```
+Recovered from go-cam-drop-box gcdb-<UUID> (PR #N)
+```
+
+The promotion PR reads that comment and writes the `PROMOTIONS.md` row; nobody
+edits `PROMOTIONS.md` in a submission.
 
 ## Legacy submissions
 
