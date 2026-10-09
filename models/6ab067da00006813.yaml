@@ -1,0 +1,343 @@
+id: gomodel:6ab067da00006813
+title: Oxyntomodulin-GLP1R stimulated insulin secretion (Human)
+taxon: NCBITaxon:9606
+status: development
+date_modified: '2026-10-09'
+comments:
+- 'Insulin: native OXM infusion increased glucose-dependent insulin secretion rate
+  in obese humans with and without T2DM (PMID:29545266, abstract only) -> IDA on the
+  OXM pathway; GLP1R pathway part of GSIS and GLP1R in beta-cell plasma membrane are
+  IC. GLP1R-dependence of OXM-stimulated insulin secretion shown in mouse Glp1r-/-
+  islets and INS-1 cells (PMID:18669601, abstract only), not used as evidence in this
+  human model.'
+- 'Not modelled: beta-arrestin 1/2 and GRK2 recruitment and arrestin contribution
+  to pERK1/2 (PMID:17395766, 27315480, 38360293); OXM reduction of beta-cell apoptosis
+  (PMID:18669601); OXM action on GCGR. Upstream OXM production by L cells: see gomodel:6ab067da00005905.'
+- 'OXM enabler = GCG peptide chain UniProtKB:P01275-PRO_0000011255 (aa 53-89). OXM->GLP1R
+  IDA from cAMP and BRET assays in GLP-1R-expressing cells (PMID:27315480 full text;
+  PMID:17395766). GLP1R part of AC-activating GPCR pathway: OXM cAMP blocked by adenylyl
+  cyclase inhibitors (PMID:27315480, Fig S1).'
+activities:
+- id: gomodel:6ab067da00006813/6ab067da00006815
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:29545266
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - https://www.uniprot.org
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:27315480
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - https://www.uniprot.org
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:17395766
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+      - https://www.uniprot.org
+    term: UniProtKB:P01275-PRO_0000011255
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0005179
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:29545266
+      with_objects:
+      - GO:0005179
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005576
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:27315480
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:17395766
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007189
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:29545266
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-5283-6593
+          date: '2026-10-09'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0035774
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:27315480
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:17395766
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+      - https://www.uniprot.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00006813/6ab067da00006816
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:27315480
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - https://www.uniprot.org
+    - term: ECO:0000314
+      reference: PMID:17395766
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00006813/6ab067da00006821
+- id: gomodel:6ab067da00006813/6ab067da00006821
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:27315480
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:17395766
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+      - https://www.uniprot.org
+    term: UniProtKB:P43220
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0044508
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:27315480
+      with_objects:
+      - GO:0044508
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:29545266
+        with_objects:
+        - GO:0035774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-5283-6593
+          date: '2026-10-09'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000169
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:27315480
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:17395766
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-5283-6593
+      date: '2026-10-09'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007189
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:29545266
+        with_objects:
+        - GO:0035774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-5283-6593
+          date: '2026-10-09'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-5283-6593
+        date: '2026-10-09'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0035774
+molecules:
+- id: gomodel:6ab067da00006813/6ab067da00006816
+  term: UniProtKB:P43220
+objects:
+- id: UniProtKB:P01275-PRO_0000011255
+  label: GCG-OXM Hsap
+  type: gocam:Object
+- id: GO:0005179
+  label: hormone activity
+  type: gocam:Object
+- id: UniProtKB:P43220
+  label: GLP1R Hsap
+  type: gocam:Object
+- id: GO:0007189
+  label: adenylate cyclase-activating G protein-coupled receptor signaling pathway
+  type: gocam:Object
+- id: GO:0035774
+  label: positive regulation of insulin secretion involved in cellular response to
+    glucose stimulus
+  type: gocam:Object
+- id: GO:0044508
+  label: glucagon-like peptide 1 receptor activity
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: CL:0000169
+  label: type B pancreatic cell
+  type: gocam:Object
+- id: GO:0005576
+  label: extracellular region
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000305
+  label: curator inference used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0002-5283-6593
+  date: '2026-10-09'
+  provided_by:
+  - http://geneontology.org
+  - https://www.uniprot.org
