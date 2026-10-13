@@ -89,11 +89,12 @@ People with the **`go-ai-hub` permission** in GO's
 (`authorizations.go-ai-hub.allow-login: true`), the same permission that admits
 them to the GO AI Hub. The `author-authorized` check reads that file and fails
 a PR from anyone else (it runs from `main`'s copy of the workflow, so a PR
-cannot change it); a reviewer named in `.github/CODEOWNERS` (the `allow-admin`
-holders) approves, and `main` takes nothing but reviewed PRs. The reviewer's
-approval is the gate for everything a PR could alter, the other CI jobs
-included; the checks are there so that an honest submission arrives green.
-To be added, ask a GO admin to edit your `users.yaml` entry.
+cannot change it). Merging is done by the maintainers (the `allow-admin`
+holders in `users.yaml`: kltm, pgaudet, vanaukenk, cmungall), usually in a
+batch at the biweekly Noctua outage; `main` takes nothing but PRs they merge.
+The maintainer's merge is the gate for everything a PR could alter, the other
+CI jobs included; the checks are there so that an honest submission arrives
+green. To be added, ask a GO admin to edit your `users.yaml` entry.
 
 Members with write access push a branch to this repository directly; a fork
 works too, but a fork that is behind `main` cannot be pushed to with an OAuth
