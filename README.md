@@ -84,9 +84,21 @@ curl -s -X POST http://barista-dev.berkeleybop.org/api/minerva_public_dev/m3Batc
 
 ## Who can contribute
 
-GitHub organization members. Anyone can technically open a PR on a public repo,
-but merge is gated on the CI checks above **and** a maintainer's review; we only
-support submissions from GO-org members at this time.
+People with the **`go-ai-hub` permission** in GO's
+[`users.yaml`](https://github.com/geneontology/go-site/blob/master/metadata/users.yaml)
+(`authorizations.go-ai-hub.allow-login: true`), the same permission that admits
+them to the GO AI Hub. The `author-authorized` check reads that file and fails
+a PR from anyone else (it runs from `main`'s copy of the workflow, so a PR
+cannot change it); a reviewer named in `.github/CODEOWNERS` (the `allow-admin`
+holders) approves, and `main` takes nothing but reviewed PRs. The reviewer's
+approval is the gate for everything a PR could alter, the other CI jobs
+included; the checks are there so that an honest submission arrives green.
+To be added, ask a GO admin to edit your `users.yaml` entry.
+
+Members with write access push a branch to this repository directly; a fork
+works too, but a fork that is behind `main` cannot be pushed to with an OAuth
+token that lacks the `workflow` scope once the CI workflow has changed upstream
+(press "Sync fork" on the fork's GitHub page first).
 
 ## Layout
 

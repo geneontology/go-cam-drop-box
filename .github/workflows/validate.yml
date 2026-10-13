@@ -101,24 +101,3 @@ jobs:
           fi
           echo "Validating: $FILES"
           python validation/validate_model.py $FILES
-
-  # Advisory only (non-blocking): note whether the PR author is a PUBLIC member
-  # of the GO org. Uses the unauthenticated public-members endpoint, so it needs
-  # no secret and works on fork PRs. It never blocks merge — the maintainer's
-  # merge decision is the real membership gate.
-  org-membership-advisory:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - name: Check public GO-org membership
-        run: |
-          AUTHOR='${{ github.event.pull_request.user.login }}'
-          CODE=$(curl -s -o /dev/null -w '%{http_code}' \
-            "https://api.github.com/orgs/geneontology/public_members/${AUTHOR}")
-          if [ "$CODE" = "204" ]; then
-            echo "::notice::PR author @${AUTHOR} is a public member of the geneontology org."
-          else
-            echo "::notice::PR author @${AUTHOR} is NOT a public member of the geneontology org (or membership is private). Submissions are only supported from GO-org members; a maintainer will confirm before merge."
-          fi
