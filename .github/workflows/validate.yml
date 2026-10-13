@@ -102,23 +102,41 @@ jobs:
           echo "Validating: $FILES"
           python validation/validate_model.py $FILES
 
-  # Advisory only (non-blocking): note whether the PR author is a PUBLIC member
-  # of the GO org. Uses the unauthenticated public-members endpoint, so it needs
-  # no secret and works on fork PRs. It never blocks merge — the maintainer's
-  # merge decision is the real membership gate.
-  org-membership-advisory:
+  # Who may submit: the PR author must hold the `go-ai-hub` permission in GO's
+  # users.yaml (geneontology/go-site metadata/users.yaml, authorizations.
+  # go-ai-hub.allow-login: true), the same permission that admits them to the GO
+  # AI Hub (geneontology/go-jupyter#83). Reads the public file, needs no secret,
+  # runs on fork PRs. Required status check once go-site carries the data.
+  author-authorized:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       contents: read
     steps:
-      - name: Check public GO-org membership
+      - name: PR author holds go-ai-hub.allow-login in go-site users.yaml
+        env:
+          AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
-          AUTHOR='${{ github.event.pull_request.user.login }}'
-          CODE=$(curl -s -o /dev/null -w '%{http_code}' \
-            "https://api.github.com/orgs/geneontology/public_members/${AUTHOR}")
-          if [ "$CODE" = "204" ]; then
-            echo "::notice::PR author @${AUTHOR} is a public member of the geneontology org."
-          else
-            echo "::notice::PR author @${AUTHOR} is NOT a public member of the geneontology org (or membership is private). Submissions are only supported from GO-org members; a maintainer will confirm before merge."
-          fi
+          set -euo pipefail
+          curl -fsSL --retry 3 \
+            https://raw.githubusercontent.com/geneontology/go-site/master/metadata/users.yaml \
+            -o users.yaml
+          python3 -m pip install --quiet pyyaml
+          python3 - "$AUTHOR" <<'EOF'
+          import sys, yaml
+          author = sys.argv[1].lower()
+          for e in yaml.safe_load(open('users.yaml')):
+              gh = ((e.get('accounts') or {}).get('github') or '').strip().lower()
+              if gh != author:
+                  continue
+              hub = (e.get('authorizations') or {}).get('go-ai-hub') or {}
+              if hub.get('allow-login') is True:
+                  print(f"::notice::@{author} holds go-ai-hub.allow-login in users.yaml ({e.get('nickname')}).")
+                  sys.exit(0)
+              print(f"::error::@{author} is in users.yaml ({e.get('nickname')}) but has no go-ai-hub.allow-login. "
+                    "Ask a GO admin to add the permission (geneontology/go-site metadata/users.yaml).")
+              sys.exit(1)
+          print(f"::error::@{author} has no users.yaml entry with accounts.github. "
+                "Submissions need the go-ai-hub permission in geneontology/go-site metadata/users.yaml.")
+          sys.exit(1)
+          EOF

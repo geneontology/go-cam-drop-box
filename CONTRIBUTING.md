@@ -6,7 +6,9 @@ gated by automated checks plus a maintainer review.
 
 ## Before you start
 
-- A **GitHub account** that is a member of the GO organization.
+- A **GitHub account** that holds the **`go-ai-hub` permission** in GO's
+  `users.yaml` (`authorizations.go-ai-hub.allow-login`; ask a GO admin). CI
+  checks this on every PR.
 - Your model built and **stored on noctua-dev**, in whatever state you consider
   right for it (`development` is fine; `delete` is refused). The
   id minerva gave it there (`gomodel:<16 hex>`) is the model's id here and in
@@ -22,8 +24,12 @@ gated by automated checks plus a maintainer review.
    pip install -r validation/requirements.txt
    python validation/validate_model.py models/<id>.yaml
    ```
-3. **Fork** `geneontology/go-cam-drop-box`, clone your fork, create a branch,
-   add both files, commit, and open a PR against `main`. Briefly describe what
+3. **Branch and open a PR.** If you have write access to
+   `geneontology/go-cam-drop-box` (members of the hub's GitHub team do), clone
+   it, create a branch `add-<id>`, add both files, commit, push, and open a PR
+   against `main`. Otherwise fork it first and push the branch to your fork; if
+   your fork is older than the last change to `.github/workflows/`, press
+   "Sync fork" on its GitHub page before pushing, or the push is refused. Briefly describe what
    the model represents. **The PR changes only those two files**: CI refuses a
    submission that touches anything else (`PROMOTIONS.md`, the README, the
    workflow), because concurrent submissions editing a shared file collide. **Not final yet?** Open it as a **draft PR**: CI still

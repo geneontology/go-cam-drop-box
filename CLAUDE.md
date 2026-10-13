@@ -37,8 +37,16 @@ optional, and they must agree exactly — CI compares them.
   the SPARQL battery rejects orphaned individuals.
 - Self-check: `python validation/validate_model.py models/<id>.yaml` (with the
   QC queries fetched as in the README).
-- Fork `geneontology/go-cam-drop-box`, add both files on a branch, commit, open
-  the PR, and say in the PR what the model represents and its dev id. The PR
+- Check whether the curator can push here:
+  `gh api repos/geneontology/go-cam-drop-box --jq .permissions.push`. If
+  `true`, clone this repository fresh (`gh repo clone geneontology/go-cam-drop-box`
+  into a new directory, not a clone left from an earlier save) and branch
+  `add-<id>` on it; if `false`, fork and push to the fork (a fork behind `main`
+  may refuse the push for lack of the `workflow` scope: have the curator press
+  "Sync fork" on the fork's GitHub page, then push again). Add both files,
+  commit, open the PR, and say in the PR what the model represents and its
+  dev id. Only holders of the `go-ai-hub` permission in GO's `users.yaml` can
+  submit; CI checks the PR author. The PR
   contains **only** `models/<id>.yaml` and `models/<id>.ttl`; CI refuses
   anything else.
 - Recovering a legacy `gcdb-` submission? Record it **in the model**, as a
