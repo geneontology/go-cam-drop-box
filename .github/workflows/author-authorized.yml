@@ -1,0 +1,60 @@
+name: author-authorized
+
+# Who may submit: the PR author must hold the `go-ai-hub` permission in GO's
+# users.yaml (geneontology/go-site metadata/users.yaml,
+# authorizations.go-ai-hub.allow-login: true), the same permission that admits
+# them to the GO AI Hub (geneontology/go-jupyter#83).
+#
+# `pull_request_target` on purpose: the job then runs THIS file as it is on
+# `main`, not the PR's copy, so a PR cannot edit the check into passing. That
+# trigger is safe here because the job checks out nothing and runs nothing
+# from the PR; it reads the PR author's login from the event and a public
+# file from go-site. Keep it that way: never add a checkout of the PR head or
+# execution of PR content to this workflow. Required status check once go-site
+# carries the data.
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  author-authorized:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PR author holds go-ai-hub.allow-login in go-site users.yaml
+        env:
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 \
+            https://raw.githubusercontent.com/geneontology/go-site/master/metadata/users.yaml \
+            -o users.yaml
+          python3 -m pip install --quiet pyyaml
+          python3 - "$AUTHOR" <<'EOF'
+          import sys, yaml
+          author = sys.argv[1].lower()
+          seen = []
+          for e in yaml.safe_load(open('users.yaml')) or []:
+              if not isinstance(e, dict):
+                  continue
+              accounts = e.get('accounts')
+              gh = (accounts.get('github') if isinstance(accounts, dict) else None) or ''
+              if gh.strip().lower() != author:
+                  continue
+              seen.append(e.get('nickname'))
+              auths = e.get('authorizations')
+              hub = auths.get('go-ai-hub') if isinstance(auths, dict) else None
+              if isinstance(hub, dict) and hub.get('allow-login') is True:
+                  print(f"::notice::@{author} holds go-ai-hub.allow-login in users.yaml ({e.get('nickname')}).")
+                  sys.exit(0)
+          if seen:
+              print(f"::error::@{author} is in users.yaml ({', '.join(map(str, seen))}) but has no go-ai-hub.allow-login. "
+                    "Ask a GO admin to add the permission (geneontology/go-site metadata/users.yaml).")
+          else:
+              print(f"::error::@{author} has no users.yaml entry with accounts.github. "
+                    "Submissions need the go-ai-hub permission in geneontology/go-site metadata/users.yaml.")
+          sys.exit(1)
+          EOF
