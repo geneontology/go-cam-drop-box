@@ -1,4 +1,0 @@
-# Reviewers whose approval merges a submission: the people with
-# authorizations.go-ai-hub.allow-admin in geneontology/go-site metadata/users.yaml.
-# Keep in step with that file (geneontology/go-jupyter#83).
-* @kltm @pgaudet @vanaukenk @cmungall
