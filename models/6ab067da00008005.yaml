@@ -9,7 +9,7 @@ comments:
   but autophagic flux requires both (single KOs impaired; DKO rescued only by co-expression;
   PMID:42842923); they self-associate and hetero-associate via their transmembrane
   regions (PMID:33296653), so the ER adaptor is captured as a MOSPD1-MOSPD3 complex.
-  Placeholder: GO:0032991 protein-containing complex, pending a GO term request for
+  Placeholder: GO:0098796 membrane protein complex, pending a GO term request for
   ''MOSPD1-MOSPD3 complex''. WDR45/WIPI4 stimulates ATG2B lipid transfer (PMID:31721365);
   TRAPPC11 is required for recruitment of ATG2B-WIPI4 to isolation membranes (PMID:30843302).'
 activities:
@@ -31,7 +31,7 @@ activities:
       date: '2026-10-19'
       provided_by:
       - http://geneontology.org
-    term: GO:0032991
+    term: GO:0098796
     has_part:
     - type: ProteinComplexHasPartAssociation
       evidence:
@@ -512,8 +512,8 @@ objects:
 - id: UniProtKB:Q7Z392
   label: TRAPPC11 Hsap
   type: gocam:Object
-- id: GO:0032991
-  label: protein-containing complex
+- id: GO:0098796
+  label: membrane protein complex
   type: gocam:Object
 provenances:
 - contributor:
