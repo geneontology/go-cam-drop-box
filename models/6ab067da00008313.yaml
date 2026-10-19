@@ -85,25 +85,6 @@ activities:
         provided_by:
         - http://geneontology.org
       term: GO:0120061
-  causal_associations:
-  - type: CausalAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:17395766
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0002-2979-8613
-        date: '2026-10-18'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0002-2979-8613
-      date: '2026-10-18'
-      provided_by:
-      - http://geneontology.org
-    predicate: RO:0002407
-    downstream_activity: gomodel:6ab067da00008313/6ab067da00008336
 - id: gomodel:6ab067da00008313/6ab067da00008314
   enabled_by:
     type: EnabledByGeneProductAssociation
@@ -234,66 +215,6 @@ activities:
       - http://geneontology.org
     predicate: RO:0002629
     downstream_activity: gomodel:6ab067da00008313/6ab067da00008322
-- id: gomodel:6ab067da00008313/6ab067da00008336
-  enabled_by:
-    type: EnabledByGeneProductAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:17395766
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0002-2979-8613
-        date: '2026-10-18'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0002-2979-8613
-      date: '2026-10-18'
-      provided_by:
-      - http://geneontology.org
-    term: PR:000000001
-  molecular_function:
-    type: MolecularFunctionAssociation
-    term: GO:0004016
-  part_of:
-    type: BiologicalProcessAssociation
-    evidence:
-    - term: ECO:0000314
-      reference: PMID:17395766
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0002-2979-8613
-        date: '2026-10-18'
-        provided_by:
-        - http://geneontology.org
-    provenances:
-    - contributor:
-      - https://orcid.org/0000-0002-2979-8613
-      date: '2026-10-18'
-      provided_by:
-      - http://geneontology.org
-    term: GO:0007189
-    part_of:
-      type: BiologicalProcessAssociation
-      evidence:
-      - term: ECO:0000305
-        reference: PMID:26445112
-        with_objects:
-        - GO:0004016
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0002-2979-8613
-          date: '2026-10-18'
-          provided_by:
-          - http://geneontology.org
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0002-2979-8613
-        date: '2026-10-18'
-        provided_by:
-        - http://geneontology.org
-      term: GO:0120061
 molecules:
 - id: gomodel:6ab067da00008313/6ab067da00008321
   term: UniProtKB:P43220
@@ -324,12 +245,6 @@ objects:
   type: gocam:Object
 - id: GO:0007189
   label: adenylate cyclase-activating G protein-coupled receptor signaling pathway
-  type: gocam:Object
-- id: GO:0004016
-  label: adenylate cyclase activity
-  type: gocam:Object
-- id: PR:000000001
-  label: protein
   type: gocam:Object
 - id: ECO:0000305
   label: curator inference used in manual assertion
