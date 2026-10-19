@@ -113,13 +113,21 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
-        date: '2026-10-18'
+        date: '2026-10-19'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000314
+      reference: PMID:26445112
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-19'
         provided_by:
         - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0002-2979-8613
-      date: '2026-10-18'
+      date: '2026-10-19'
       provided_by:
       - http://geneontology.org
     term: UniProtKB:P01275-PRO_0000011255
@@ -170,13 +178,21 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
-          date: '2026-10-18'
+          date: '2026-10-19'
+          provided_by:
+          - http://geneontology.org
+      - term: ECO:0000314
+        reference: PMID:26445112
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-2979-8613
+          date: '2026-10-19'
           provided_by:
           - http://geneontology.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
-        date: '2026-10-18'
+        date: '2026-10-19'
         provided_by:
         - http://geneontology.org
       term: GO:0120061
