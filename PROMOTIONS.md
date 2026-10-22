@@ -82,3 +82,28 @@ molecules, evidence). Promoted in the batch of 2026-10-08 above.
 | `gcdb-8478a448-eed7-44b4-9a9c-fb2100c27b9b` | #19 | `gomodel:6ab067da00001660` | Intermembrane phospholipid transfer at ER-PM via VPS13A-XK (Human) |
 | `gcdb-056b6868-99d6-4e80-b88a-cd3b5666929e` | #5 | `gomodel:6ab067da00001694` | DYRK1A phosphorylates CDKL5 to promote its nuclear export and cytoplasmic kinase activity (Hsap, ISS from mouse; PMID:27840050, PMID:30266824) |
 | `gcdb-bafd07d4-3d55-41cd-a9bf-1fb1fb5470e9` | #4 | `gomodel:6ab067da00001712` | DYRK1A phosphorylates CDKL5 on Ser-308 to promote its cytoplasmic localization (Mmus, PMID:27840050) |
+
+## Batch 2026-10-22 (noctua outage, noctua#1138)
+
+16 model(s), submitted as id-matched YAML + Turtle pairs (contract of 2026-09-24) and staged from this repo at `dc38690532d2`. The Turtle files were copied into `noctua-models` unchanged (comment and state as set on noctua-dev by the curator), as one commit (`c477b3fb`), then re-serialised by the outage's journal flush (`7534b8ae`). Ids were not re-minted.
+
+| drop-box id | drop-box PR | noctua-models id | modelstate | title |
+|---|---|---|---|---|
+| `gomodel:6ab067da00000385` | #67 | `gomodel:6ab067da00000385` | development | GOLPH3-dependent intra-Golgi recycling of glycosphingolipid synthases (Human) |
+| `gomodel:6ab067da00000473` | #68 | `gomodel:6ab067da00000473` | development | M6P tagging via GOLPH3/GOLPH3L-retained LYSET-GNPT (Human) |
+| `gomodel:6ab067da00001060` | #69 | `gomodel:6ab067da00001060` | development | Regulation of GOLPH3-dependent Golgi enzyme retention (Human) |
+| `gomodel:6ab067da00001410` | #58 | `gomodel:6ab067da00001410` | development | EGFR signaling pathway via LIN-3/LET-23 (C. elegans) |
+| `gomodel:6ab067da00005361` | #62 | `gomodel:6ab067da00005361` | development | Vascular smooth muscle contraction via UTS2-UTS2R-PLCB3 (Human) |
+| `gomodel:6ab067da00006525` | #52 | `gomodel:6ab067da00006525` | production | IL-36 signaling in dendritic cell (Human) |
+| `gomodel:6ab067da00006587` | #53 | `gomodel:6ab067da00006587` | production | Interleukin-36 signaling in neutrophils (Human) |
+| `gomodel:6ab067da00006645` | #54 | `gomodel:6ab067da00006645` | production | IL-36 signaling in T cell activation (Human) |
+| `gomodel:6ab067da00006681` | #55 | `gomodel:6ab067da00006681` | production | IL-36R defense response to Gram-negative bacterium (Human) |
+| `gomodel:6ab067da00006813` | #56 | `gomodel:6ab067da00006813` | development | Oxyntomodulin-GLP1R stimulated insulin secretion (Human) |
+| `gomodel:6ab067da00008005` | #65 | `gomodel:6ab067da00008005` | development | Autophagosome assembly via ER-anchored ATG2B lipid transfer (Human) |
+| `gomodel:6ab067da00008083` | #64 | `gomodel:6ab067da00008083` | development | Fatty acid beta-oxidation via PISD-tethered lipid droplet-mitochondrion contacts (Human) |
+| `gomodel:6ab067da00008161` | #63 | `gomodel:6ab067da00008161` | development | G-CSF signaling via JAK1-STAT3 in granulopoiesis (Human) |
+| `gomodel:6ab067da00008313` | #66 | `gomodel:6ab067da00008313` | development | Negative regulation of gastric emptying by OXM (Human) |
+| `gomodel:6ab067da00010184` | #71 | `gomodel:6ab067da00010184` | development | OVOL2 acts upstream of the PRDM16-C/EBPbeta-PGC-1alpha-PPARgamma cascade and CIDEA-LXRalpha derepression controlling UCP1 in brown/beige adipocytes (Human) |
+| `gomodel:6ab067da00010281` | #72 | `gomodel:6ab067da00010281` | development | OVOL2 acts upstream of the PRDM16-C/EBPbeta-PGC-1alpha-PPARgamma cascade and CIDEA-LXRalpha derepression controlling UCP1 in brown/beige adipocytes (Mouse) |
+
+Removed from `models/` here by this batch's removal PR. Later removal from production, if ever, is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so a revert of the port commit conflicts).
