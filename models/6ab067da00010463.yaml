@@ -1,0 +1,215 @@
+id: gomodel:6ab067da00010463
+title: Negative regulation of ROS1 signaling by PTPN6 in epididymis (Human)
+taxon: NCBITaxon:9606
+status: development
+date_modified: '2026-10-23'
+comments:
+- Curated with GO AI HUB. Human counterpart of mouse gomodel:6ab067da00010445; all
+  lines ISS (GO_REF:0000024) from mouse Ptpn6 (MGI:96055) and Ros1 (MGI:97999), based
+  on Keilhack et al. 2001 (PMID:11266449) and Sonnenberg-Riethmacher et al. 1996 (PMID:8675006).
+  Replaces the design of gomodel:65d7e4ac00000470.
+activities:
+- id: gomodel:6ab067da00010463/6ab067da00010471
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:97999
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:P08922
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004714
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:97999
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0009986
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:97999
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007169
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000250
+        reference: GO_REF:0000024
+        with_objects:
+        - MGI:MGI:97999
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-10-22'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+      term: GO:1905867
+- id: gomodel:6ab067da00010463/6ab067da00010464
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:96055
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:P29350
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004725
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:96055
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    term: GO:1905867
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:96055
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00010463/6ab067da00010466
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:MGI:96055
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-10-22'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-8769-177X
+      date: '2026-10-22'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002630
+    downstream_activity: gomodel:6ab067da00010463/6ab067da00010471
+molecules:
+- id: gomodel:6ab067da00010463/6ab067da00010466
+  term: UniProtKB:P08922
+objects:
+- id: GO:0004725
+  label: protein tyrosine phosphatase activity
+  type: gocam:Object
+- id: UniProtKB:P29350
+  label: PTPN6 Hsap
+  type: gocam:Object
+- id: UniProtKB:P08922
+  label: ROS1 Hsap
+  type: gocam:Object
+- id: GO:1905867
+  label: epididymis development
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0004714
+  label: transmembrane receptor protein tyrosine kinase activity
+  type: gocam:Object
+- id: GO:0007169
+  label: cell surface receptor protein tyrosine kinase signaling pathway
+  type: gocam:Object
+- id: GO:0009986
+  label: cell surface
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0001-8769-177X
+  date: '2026-10-23'
+  provided_by:
+  - http://geneontology.org
