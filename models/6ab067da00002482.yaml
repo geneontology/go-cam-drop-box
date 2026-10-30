@@ -2,7 +2,7 @@ id: gomodel:6ab067da00002482
 title: Rod-rod bipolar postsynapse organization via LRIT3_Visual Perception (Human)
 taxon: NCBITaxon:9606
 status: development
-date_modified: '2026-10-23'
+date_modified: '2026-10-30'
 comments:
 - '2026-10-02: LRIT3 BP refined per curator - part_of GO:1903539 protein localization
   to postsynaptic membrane (replaces GO:0099173 postsynapse organization).'
@@ -135,16 +135,36 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0003-1522-9900
-          date: '2026-10-23'
+          date: '2026-10-30'
           provided_by:
           - http://geneontology.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0003-1522-9900
-        date: '2026-10-02'
+        date: '2026-10-30'
         provided_by:
         - http://geneontology.org
-      term: GO:0007601
+      term: GO:0099173
+      part_of:
+        type: BiologicalProcessAssociation
+        evidence:
+        - term: ECO:0000250
+          reference: GO_REF:0000024
+          with_objects:
+          - MGI:2685267
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0003-1522-9900
+            date: '2026-10-30'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-30'
+          provided_by:
+          - http://geneontology.org
+        term: GO:0007601
   molecular_associations:
   - type: MoleculeAssociation
     evidence:
@@ -268,7 +288,7 @@ activities:
           date: '2026-10-05'
           provided_by:
           - http://geneontology.org
-        term: CL:0000751
+        term: CL:0000749
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -297,14 +317,36 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0003-1522-9900
-          date: '2026-10-23'
+          date: '2026-10-30'
           provided_by:
           - http://geneontology.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0003-1522-9900
-        date: '2026-10-16'
-      term: GO:0007601
+        date: '2026-10-30'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0099173
+      part_of:
+        type: BiologicalProcessAssociation
+        evidence:
+        - term: ECO:0000250
+          reference: GO_REF:0000024
+          with_objects:
+          - MGI:2448607
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0003-1522-9900
+            date: '2026-10-30'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-30'
+          provided_by:
+          - http://geneontology.org
+        term: GO:0007601
   molecular_associations:
   - type: MoleculeAssociation
     evidence:
@@ -613,10 +655,13 @@ objects:
 - id: UniProtKB:O15303
   label: GRM6 Hsap
   type: gocam:Object
+- id: GO:0099173
+  label: postsynapse organization
+  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0003-1522-9900
-  date: '2026-10-23'
+  date: '2026-10-30'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
