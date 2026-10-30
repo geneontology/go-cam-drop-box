@@ -3,7 +3,7 @@ title: GPR179 and RGS9BP organize RGS7/RGS11-Gbeta5 GAP activity on Galpha-o to 
   TRPM1 gating in ON-bipolar cells_Visual Perception (Human)
 taxon: NCBITaxon:9606
 status: development
-date_modified: '2026-10-23'
+date_modified: '2026-10-30'
 comments:
 - Curated with GO AI HUB. GPR179 and RGS9BP anchor the RGS7/RGS11-Gbeta5 GAPs that
   deactivate Galpha-o, enabling TRPM1 opening in ON-bipolar cells.
@@ -1026,24 +1026,6 @@ activities:
       provided_by:
       - https://www.uniprot.org
     term: GO:0007216
-    part_of:
-      type: BiologicalProcessAssociation
-      evidence:
-      - term: ECO:0000250
-        reference: GO_REF:0000024
-        with_objects:
-        - MGI:95775
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0003-1522-9900
-          date: '2026-10-23'
-          provided_by:
-          - http://geneontology.org
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0003-1522-9900
-        date: '2026-10-19'
-      term: GO:0007601
   causal_associations:
   - type: CausalAssociation
     evidence:
@@ -1320,7 +1302,7 @@ objects:
 provenances:
 - contributor:
   - https://orcid.org/0000-0003-1522-9900
-  date: '2026-10-23'
+  date: '2026-10-30'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org

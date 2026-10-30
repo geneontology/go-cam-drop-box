@@ -11,7 +11,7 @@
                                                   <http://geneontology.org/lego/conforms_to_gpad> "false"^^xsd:boolean ;
                                                   <http://geneontology.org/lego/modelstate> "development" ;
                                                   <http://purl.org/dc/elements/1.1/contributor> "https://orcid.org/0000-0003-1522-9900" ;
-                                                  <http://purl.org/dc/elements/1.1/date> "2026-10-23"^^xsd:string ;
+                                                  <http://purl.org/dc/elements/1.1/date> "2026-10-30"^^xsd:string ;
                                                   <http://purl.org/dc/elements/1.1/title> "GPR179 and RGS9BP organize RGS7/RGS11-Gbeta5 GAP activity on Galpha-o to enable TRPM1 gating in ON-bipolar cells_Visual Perception (Human)"^^xsd:string ;
                                                   <http://purl.org/pav/providedBy> "http://geneontology.org"^^xsd:string ,
                                                                                    "https://www.uniprot.org" ;
@@ -887,19 +887,9 @@
 ###  http://model.geneontology.org/6ab067da00008260/6ab067da00008461
 <http://model.geneontology.org/6ab067da00008260/6ab067da00008461> rdf:type owl:NamedIndividual ,
                                                                            <http://purl.obolibrary.org/obo/GO_0007216> ;
-                                                                  <http://purl.obolibrary.org/obo/BFO_0000050> <http://model.geneontology.org/6ab067da00008260/6ab067da00008507> ;
                                                                   <http://purl.org/dc/elements/1.1/contributor> "https://orcid.org/0000-0003-1522-9900" ;
                                                                   <http://purl.org/dc/elements/1.1/date> "2026-10-19"^^xsd:string ;
                                                                   <http://purl.org/pav/providedBy> "https://www.uniprot.org" .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://model.geneontology.org/6ab067da00008260/6ab067da00008461> ;
-   owl:annotatedProperty <http://purl.obolibrary.org/obo/BFO_0000050> ;
-   owl:annotatedTarget <http://model.geneontology.org/6ab067da00008260/6ab067da00008507> ;
-   <http://geneontology.org/lego/evidence> <http://model.geneontology.org/6ab067da00008260/6ab067da00008508> ;
-   <http://purl.org/dc/elements/1.1/contributor> "https://orcid.org/0000-0003-1522-9900" ;
-   <http://purl.org/dc/elements/1.1/date> "2026-10-19"^^xsd:string
- ] .
 
 
 ###  http://model.geneontology.org/6ab067da00008260/6ab067da00008462
@@ -1093,23 +1083,6 @@
                                                                            <http://purl.obolibrary.org/obo/GO_0007601> ;
                                                                   <http://purl.org/dc/elements/1.1/contributor> "https://orcid.org/0000-0003-1522-9900" ;
                                                                   <http://purl.org/dc/elements/1.1/date> "2026-10-19"^^xsd:string .
-
-
-###  http://model.geneontology.org/6ab067da00008260/6ab067da00008507
-<http://model.geneontology.org/6ab067da00008260/6ab067da00008507> rdf:type owl:NamedIndividual ,
-                                                                           <http://purl.obolibrary.org/obo/GO_0007601> ;
-                                                                  <http://purl.org/dc/elements/1.1/contributor> "https://orcid.org/0000-0003-1522-9900" ;
-                                                                  <http://purl.org/dc/elements/1.1/date> "2026-10-19"^^xsd:string .
-
-
-###  http://model.geneontology.org/6ab067da00008260/6ab067da00008508
-<http://model.geneontology.org/6ab067da00008260/6ab067da00008508> rdf:type owl:NamedIndividual ,
-                                                                           <http://purl.obolibrary.org/obo/ECO_0000250> ;
-                                                                  <http://geneontology.org/lego/evidence-with> "MGI:95775"^^xsd:string ;
-                                                                  <http://purl.org/dc/elements/1.1/contributor> "https://orcid.org/0000-0003-1522-9900" ;
-                                                                  <http://purl.org/dc/elements/1.1/date> "2026-10-23"^^xsd:string ;
-                                                                  <http://purl.org/dc/elements/1.1/source> "GO_REF:0000024"^^xsd:string ;
-                                                                  <http://purl.org/pav/providedBy> "http://geneontology.org"^^xsd:string .
 
 
 ###  http://model.geneontology.org/6ab067da00008260/6ab067da00008509
