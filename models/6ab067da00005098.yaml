@@ -2,7 +2,7 @@ id: gomodel:6ab067da00005098
 title: Cone-ON bipolar postsynapse organization via LRIT3_Visual Perception (Human)
 taxon: NCBITaxon:9606
 status: development
-date_modified: '2026-10-23'
+date_modified: '2026-10-26'
 comments:
 - '2026-10-02: LRIT3 BP refined per curator - part_of GO:1903539 protein localization
   to postsynaptic membrane (nested part_of GO:0099173 postsynapse organization).'
@@ -764,6 +764,24 @@ molecules:
   term: UniProtKB:Q7Z4N2
 - id: gomodel:6ab067da00005098/6ab067da00005117
   term: CHEBI:29985
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000304
+      reference: PMID:9862914
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-26'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-26'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0043083
 objects:
 - id: UniProtKB:Q3SXY7
   label: LRIT3 Hsap
@@ -831,10 +849,16 @@ objects:
 - id: GO:0030674
   label: protein-macromolecule adaptor activity
   type: gocam:Object
+- id: GO:0043083
+  label: synaptic cleft
+  type: gocam:Object
+- id: ECO:0000304
+  label: author statement supported by traceable reference used in manual assertion
+  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0003-1522-9900
-  date: '2026-10-23'
+  date: '2026-10-26'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
