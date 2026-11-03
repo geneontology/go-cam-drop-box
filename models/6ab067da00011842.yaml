@@ -64,57 +64,6 @@ activities:
         provided_by:
         - http://geneontology.org
       term: UniProtKB:P17787
-    - type: ProteinComplexHasPartAssociation
-      evidence:
-      - term: ECO:0000314
-        reference: PMID:38161283
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0001-8769-177X
-          date: '2026-10-27'
-          provided_by:
-          - http://geneontology.org
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-8769-177X
-        date: '2026-10-27'
-        provided_by:
-        - http://geneontology.org
-      term: UniProtKB:P17787
-    - type: ProteinComplexHasPartAssociation
-      evidence:
-      - term: ECO:0000314
-        reference: PMID:38161283
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0001-8769-177X
-          date: '2026-10-27'
-          provided_by:
-          - http://geneontology.org
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-8769-177X
-        date: '2026-10-27'
-        provided_by:
-        - http://geneontology.org
-      term: UniProtKB:P36544
-    - type: ProteinComplexHasPartAssociation
-      evidence:
-      - term: ECO:0000314
-        reference: PMID:38161283
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0001-8769-177X
-          date: '2026-10-27'
-          provided_by:
-          - http://geneontology.org
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0001-8769-177X
-        date: '2026-10-27'
-        provided_by:
-        - http://geneontology.org
-      term: UniProtKB:P36544
   molecular_function:
     type: MolecularFunctionAssociation
     term: GO:0022848
