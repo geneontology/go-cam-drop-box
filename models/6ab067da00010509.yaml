@@ -1,0 +1,347 @@
+id: gomodel:6ab067da00010509
+title: GPR179 positive regulation of TRPM1 channel gating in ON-bipolar cells_Visual
+  Perception (Human)
+taxon: NCBITaxon:9606
+status: development
+date_modified: '2026-10-23'
+comments:
+- Curated with GO AI HUB. GPR179 directly positively regulates TRPM1 channel gating
+  at ON-bipolar dendritic tips.
+- 'Model B of the two GPR179 models (curator design 2026-10-15). GPR179 ion channel
+  regulator activity (GO:0099106) has_input TRPM1 and directly positively regulates
+  the TRPM1 channel: Ray 2014 PMID:24790204 (Fig. 6 capsaicin-gated TRPM1 current
+  reduced in nob5, normal in Rgs7/Rgs11 DKO, so independent of the RGS anchoring in
+  Model A gomodel:6ab067da00008260; Fig. 3 direct interaction) and Orlandi 2013 PMID:24114537
+  (human GPR179 x mouse TRPM1 co-IP; PLA in retina). Mouse data -> ISS GO_REF:0000024
+  with MGI. Data are from rod bipolar cells; ON-bipolar cell CL:0000749 used to match
+  Model A and the mega-viewer. Joins Model A and gomodel:6a6ba88c00000472 at TRPM1.'
+activities:
+- id: gomodel:6ab067da00010509/6ab067da00010510
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:2443409
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q6PRD1
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0099106
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:24222301
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:24222301
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-23'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0044292
+      part_of:
+        type: GrossAnatomyAssociation
+        evidence:
+        - term: ECO:0000314
+          reference: PMID:24222301
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0003-1522-9900
+            date: '2026-10-23'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-23'
+          provided_by:
+          - http://geneontology.org
+        term: CL:0000749
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:2443409
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007216
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:22325362
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-23'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0007601
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000353
+      reference: PMID:24114537
+      with_objects:
+      - UniProtKB:Q2TV84
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00010509/6ab067da00010512
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:2443409
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00010509/6ab067da00010525
+- id: gomodel:6ab067da00010509/6ab067da00010525
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:1330305
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q7Z4N2
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0005261
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:1330305
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000250
+        reference: GO_REF:0000024
+        with_objects:
+        - MGI:1330305
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-23'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0044292
+      part_of:
+        type: GrossAnatomyAssociation
+        evidence:
+        - term: ECO:0000250
+          reference: GO_REF:0000024
+          with_objects:
+          - MGI:1330305
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0003-1522-9900
+            date: '2026-10-23'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-23'
+          provided_by:
+          - http://geneontology.org
+        term: CL:0000749
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - MGI:1330305
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0003-1522-9900
+      date: '2026-10-23'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0007216
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:19878917
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-10-23'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-10-23'
+        provided_by:
+        - http://geneontology.org
+      term: GO:0007601
+molecules:
+- id: gomodel:6ab067da00010509/6ab067da00010512
+  term: UniProtKB:Q7Z4N2
+objects:
+- id: GO:0099106
+  label: ion channel regulator activity
+  type: gocam:Object
+- id: UniProtKB:Q6PRD1
+  label: GPR179 Hsap
+  type: gocam:Object
+- id: UniProtKB:Q7Z4N2
+  label: TRPM1 Hsap
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000353
+  label: physical interaction evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: GO:0044292
+  label: dendrite terminus
+  type: gocam:Object
+- id: CL:0000749
+  label: ON-bipolar cell
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0007216
+  label: G protein-coupled glutamate receptor signaling pathway
+  type: gocam:Object
+- id: GO:0007601
+  label: visual perception
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0005261
+  label: monoatomic cation channel activity
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0003-1522-9900
+  date: '2026-10-23'
+  provided_by:
+  - http://geneontology.org
