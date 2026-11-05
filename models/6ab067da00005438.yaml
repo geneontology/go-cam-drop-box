@@ -1,0 +1,458 @@
+id: gomodel:6ab067da00005438
+title: UTS2-induced vascular SMC proliferation via RHOA-ROCK2 (Rat)
+taxon: NCBITaxon:10116
+status: development
+date_modified: '2026-11-04'
+comments:
+- Curated with GO AI HUB. Rat UTS2 -> UTS2R -> RHOA -> ROCK2 signaling driving vascular
+  smooth muscle cell proliferation (Sauzeau et al. 2001 PMID:11397774).
+activities:
+- id: gomodel:6ab067da00005438/6ab067da00005439
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - UniProtKB:O95399
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: RGD:3930
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0005179
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17184580
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005576
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:11397774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:1904707
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - UniProtKB:O95399
+      - UniProtKB:Q9UKP6
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00005438/6ab067da00005446
+- id: gomodel:6ab067da00005438/6ab067da00005446
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:16141412
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: RGD:621884
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0001604
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:16141412
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:11397774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-2979-8613
+          date: '2026-10-05'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000359
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:11397774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0160221
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:11397774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-2979-8613
+          date: '2026-10-05'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+      term: GO:1904707
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:11397774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002407
+    downstream_activity: gomodel:6ab067da00005438/6ab067da00005457
+- id: gomodel:6ab067da00005438/6ab067da00005457
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:21440892
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: RGD:619921
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0003924
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11397774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0016020
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:11397774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-2979-8613
+          date: '2026-10-05'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000359
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11397774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0160221
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:11397774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-2979-8613
+          date: '2026-10-05'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+      term: GO:1904707
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:7493923
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00005438/6ab067da00005468
+- id: gomodel:6ab067da00005438/6ab067da00005468
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:7493923
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: RGD:3590
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0072518
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8816443
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005737
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000305
+        reference: PMID:11397774
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-2979-8613
+          date: '2026-10-05'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000359
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11397774
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-2979-8613
+        date: '2026-10-05'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-2979-8613
+      date: '2026-10-05'
+      provided_by:
+      - http://geneontology.org
+    term: GO:1904707
+molecules: []
+objects:
+- id: GO:0005179
+  label: hormone activity
+  type: gocam:Object
+- id: RGD:3930
+  label: Uts2 Rnor
+  type: gocam:Object
+- id: GO:0005576
+  label: extracellular region
+  type: gocam:Object
+- id: GO:1904707
+  label: positive regulation of vascular associated smooth muscle cell proliferation
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000305
+  label: curator inference used in manual assertion
+  type: gocam:Object
+- id: GO:0001604
+  label: urotensin II receptor activity
+  type: gocam:Object
+- id: RGD:621884
+  label: Uts2r Rnor
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: CL:0000359
+  label: vascular associated smooth muscle cell
+  type: gocam:Object
+- id: GO:0160221
+  label: Rho-activating G protein-coupled receptor signaling pathway
+  type: gocam:Object
+- id: GO:0003924
+  label: GTPase activity
+  type: gocam:Object
+- id: RGD:619921
+  label: Rhoa Rnor
+  type: gocam:Object
+- id: GO:0016020
+  label: membrane
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0072518
+  label: Rho-dependent protein serine/threonine kinase activity
+  type: gocam:Object
+- id: RGD:3590
+  label: Rock2 Rnor
+  type: gocam:Object
+- id: GO:0005737
+  label: cytoplasm
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0002-2979-8613
+  date: '2026-11-04'
+  provided_by:
+  - http://geneontology.org
