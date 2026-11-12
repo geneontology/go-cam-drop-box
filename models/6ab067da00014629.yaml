@@ -2,14 +2,15 @@ id: gomodel:6ab067da00014629
 title: Vascular smooth muscle relaxation by CALCB/beta-CGRP (Human)
 taxon: NCBITaxon:9606
 status: development
-date_modified: '2026-11-11'
+date_modified: '2026-11-12'
 comments:
 - 'Built 2026-11-11 from skeleton gomodel:66a3e0bb00001742 (CALCB -> CALCRL-RAMP1
   -> GNAS -> ADCY6 -> cAMP), recast in the target cell: vascular associated smooth
   muscle cell (CL:0000359), with the CGRP receptor signaling pathway part of relaxation
-  of vascular associated smooth muscle (GO:0060087, is_a vasodilation). The CGRP receptor
-  is modelled as GO:1990406 (CALCRL+RAMP1) enabling the activity, since the peptide-binding
-  site is shared by both subunits (PMID:30209400).'
+  of vascular associated smooth muscle (GO:0060087, is_a vasodilation). Receptor revised
+  2026-11-12 by the curator: CALCRL enables CGRP receptor activity (CALCB has input
+  CALCRL; CALCRL has input and directly activates GNAS), and RAMP1 coreceptor activity
+  directly positively regulates CALCRL (PMID:33602864, PMID:30209400).'
 - Curated with GO AI HUB. Beta-CGRP (CALCB) signaling via the CALCRL-RAMP1 CGRP receptor,
   Gs, adenylate cyclase, cAMP, PKA and the SUR2B/Kir6.1 KATP channel in relaxation
   of vascular smooth muscle (Human).
@@ -126,17 +127,17 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     predicate: RO:0002233
-    molecule: gomodel:6ab067da00014629/6ab067da00014634
+    molecule: gomodel:6ab067da00014629/6ab067da00015548
   causal_associations:
   - type: CausalAssociation
     evidence:
@@ -145,17 +146,17 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     predicate: RO:0002629
-    downstream_activity: gomodel:6ab067da00014629/6ab067da00014643
+    downstream_activity: gomodel:6ab067da00014629/6ab067da00015522
 - id: gomodel:6ab067da00014629/6ab067da00014705
   enabled_by:
     type: EnabledByGeneProductAssociation
@@ -656,76 +657,138 @@ activities:
       - http://geneontology.org
     predicate: RO:0002629
     downstream_activity: gomodel:6ab067da00014629/6ab067da00014705
-- id: gomodel:6ab067da00014629/6ab067da00014643
+- id: gomodel:6ab067da00014629/6ab067da00015535
   enabled_by:
-    type: EnabledByProteinComplexAssociation
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:33602864
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: UniProtKB:O60894
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0015026
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
     evidence:
     - term: ECO:0000314
       reference: PMID:9620797
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
-    term: GO:1990406
-    has_part:
-    - type: ProteinComplexHasPartAssociation
+      - https://www.uniprot.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
       evidence:
       - term: ECO:0000314
-        reference: PMID:9620797
+        reference: PMID:11804624
         provenances:
         - contributor:
           - https://orcid.org/0000-0001-7646-0052
-          date: '2026-11-11'
+          date: '2026-11-12'
           provided_by:
-          - http://geneontology.org
-      - term: ECO:0000314
-        reference: PMID:30209400
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0001-7646-0052
-          date: '2026-11-11'
-          provided_by:
-          - http://geneontology.org
+          - https://www.uniprot.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
-      term: UniProtKB:O60894
-    - type: ProteinComplexHasPartAssociation
-      evidence:
-      - term: ECO:0000314
-        reference: PMID:9620797
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0001-7646-0052
-          date: '2026-11-11'
-          provided_by:
-          - http://geneontology.org
-      - term: ECO:0000314
-        reference: PMID:30209400
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0001-7646-0052
-          date: '2026-11-11'
-          provided_by:
-          - http://geneontology.org
+        - https://www.uniprot.org
+      term: CL:0000359
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:33602864
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
-      term: UniProtKB:Q16602
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:1990408
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:14642788
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7646-0052
+          date: '2026-11-12'
+          provided_by:
+          - https://www.uniprot.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+      term: GO:0060087
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:33602864
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00014629/6ab067da00015522
+- id: gomodel:6ab067da00014629/6ab067da00015522
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:33602864
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7646-0052
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7646-0052
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: UniProtKB:Q16602
   molecular_function:
     type: MolecularFunctionAssociation
     term: GO:0001635
@@ -737,15 +800,15 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     term: GO:0005886
     part_of:
       type: CellTypeAssociation
@@ -755,33 +818,33 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0001-7646-0052
-          date: '2026-11-11'
+          date: '2026-11-12'
           provided_by:
-          - http://geneontology.org
+          - https://www.uniprot.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
       term: CL:0000359
   part_of:
     type: BiologicalProcessAssociation
     evidence:
     - term: ECO:0000314
-      reference: PMID:11804624
+      reference: PMID:33602864
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     term: GO:1990408
     part_of:
       type: BiologicalProcessAssociation
@@ -791,15 +854,15 @@ activities:
         provenances:
         - contributor:
           - https://orcid.org/0000-0001-7646-0052
-          date: '2026-11-11'
+          date: '2026-11-12'
           provided_by:
-          - http://geneontology.org
+          - https://www.uniprot.org
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
       term: GO:0060087
   molecular_associations:
   - type: MoleculeAssociation
@@ -809,34 +872,34 @@ activities:
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     predicate: RO:0002233
-    molecule: gomodel:6ab067da00014629/6ab067da00014649
+    molecule: gomodel:6ab067da00014629/6ab067da00015533
   causal_associations:
   - type: CausalAssociation
     evidence:
     - term: ECO:0000314
-      reference: PMID:30209400
+      reference: PMID:33602864
       provenances:
       - contributor:
         - https://orcid.org/0000-0001-7646-0052
-        date: '2026-11-11'
+        date: '2026-11-12'
         provided_by:
-        - http://geneontology.org
+        - https://www.uniprot.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0001-7646-0052
-      date: '2026-11-11'
+      date: '2026-11-12'
       provided_by:
-      - http://geneontology.org
+      - https://www.uniprot.org
     predicate: RO:0002629
     downstream_activity: gomodel:6ab067da00014629/6ab067da00014662
 - id: gomodel:6ab067da00014629/6ab067da00014662
@@ -974,10 +1037,6 @@ activities:
 molecules:
 - id: gomodel:6ab067da00014629/6ab067da00014679
   term: CHEBI:17489
-- id: gomodel:6ab067da00014629/6ab067da00014634
-  term: GO:1990406
-- id: gomodel:6ab067da00014629/6ab067da00014649
-  term: UniProtKB:P63092
 - id: gomodel:6ab067da00014629/6ab067da00014720
   term: CHEBI:29103
   located_in:
@@ -998,6 +1057,8 @@ molecules:
       provided_by:
       - http://geneontology.org
     term: GO:0005829
+- id: gomodel:6ab067da00014629/6ab067da00015533
+  term: UniProtKB:P63092
 - id: gomodel:6ab067da00014629/6ab067da00014709
   term: UniProtKB:Q15842
 - id: gomodel:6ab067da00014629/6ab067da00014695
@@ -1024,6 +1085,8 @@ molecules:
       provided_by:
       - http://geneontology.org
     term: GO:0005576
+- id: gomodel:6ab067da00014629/6ab067da00015548
+  term: UniProtKB:Q16602
 objects:
 - id: GO:0005179
   label: hormone activity
@@ -1034,9 +1097,6 @@ objects:
 - id: GO:0005576
   label: extracellular region
   type: gocam:Object
-- id: GO:1990406
-  label: CGRP receptor complex
-  type: gocam:Object
 - id: GO:1990408
   label: calcitonin gene-related peptide receptor signaling pathway
   type: gocam:Object
@@ -1046,35 +1106,26 @@ objects:
 - id: ECO:0000314
   label: direct assay evidence used in manual assertion
   type: gocam:Object
-- id: GO:0001635
-  label: calcitonin gene-related peptide receptor activity
-  type: gocam:Object
-- id: UniProtKB:Q16602
-  label: CALCRL Hsap
-  type: gocam:Object
-- id: UniProtKB:O60894
-  label: RAMP1 Hsap
-  type: gocam:Object
-- id: GO:0005886
-  label: plasma membrane
-  type: gocam:Object
-- id: CL:0000359
-  label: vascular associated smooth muscle cell
+- id: GO:0003925
+  label: G protein activity
   type: gocam:Object
 - id: UniProtKB:P63092
   label: GNAS Hsap
   type: gocam:Object
-- id: GO:0003925
-  label: G protein activity
-  type: gocam:Object
 - id: GO:0009898
   label: cytoplasmic side of plasma membrane
+  type: gocam:Object
+- id: CL:0000359
+  label: vascular associated smooth muscle cell
   type: gocam:Object
 - id: UniProtKB:O43306
   label: ADCY6 Hsap
   type: gocam:Object
 - id: GO:0004016
   label: adenylate cyclase activity
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
   type: gocam:Object
 - id: CHEBI:17489
   label: 3',5'-cyclic AMP
@@ -1109,9 +1160,22 @@ objects:
 - id: GO:0005829
   label: cytosol
   type: gocam:Object
+- id: GO:0001635
+  label: calcitonin gene-related peptide receptor activity
+  type: gocam:Object
+- id: UniProtKB:Q16602
+  label: CALCRL Hsap
+  type: gocam:Object
+- id: GO:0015026
+  label: coreceptor activity
+  type: gocam:Object
+- id: UniProtKB:O60894
+  label: RAMP1 Hsap
+  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0001-7646-0052
-  date: '2026-11-11'
+  date: '2026-11-12'
   provided_by:
   - http://geneontology.org
+  - https://www.uniprot.org
