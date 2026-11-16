@@ -278,13 +278,13 @@ activities:
       reference: GO_REF:0000024
       with_objects:
       - MGI:1098296
-      - ''
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
         date: '2026-11-16'
         provided_by:
         - https://www.uniprot.org
+        - http://geneontology.org
     provenances:
     - contributor:
       - https://orcid.org/0000-0002-2979-8613
@@ -1666,12 +1666,12 @@ activities:
       reference: GO_REF:0000024
       with_objects:
       - MGI:104740
-      - ''
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
         date: '2026-11-16'
         provided_by:
+        - http://geneontology.org
         - https://www.uniprot.org
     - term: ECO:0000314
       reference: PMID:16271724
