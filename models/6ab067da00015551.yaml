@@ -1,0 +1,478 @@
+id: gomodel:6ab067da00015551
+title: Lactate is imported into the cytosol by Slc16a1 and then converted into pyruvate
+  by Ldha before import into the mitochondria by Mpc1 (Mouse).
+taxon: NCBITaxon:10090
+status: development
+date_modified: '2026-11-16'
+comments:
+- 'Curated with GO AI HUB. The classic cytosolic route in mouse, modelled generally
+  rather than tissue-restricted: Slc16a1 imports lactate to the cytosol, Ldha oxidises
+  it to pyruvate, and Mpc1 carries that pyruvate into the mitochondrial matrix.'
+activities:
+- id: gomodel:6ab067da00015551/6ab067da00015606
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: MGI:MGI:106013
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0015129
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005886
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:1990484
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015551/6ab067da00015610
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015551/6ab067da00015608
+- id: gomodel:6ab067da00015551/6ab067da00015570
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: MGI:MGI:1915240
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0050833
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005743
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0006850
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015551/6ab067da00015574
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015551/6ab067da00015572
+- id: gomodel:6ab067da00015551/6ab067da00015616
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - UniProtKB:P00338
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: MGI:MGI:96759
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004459
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17572440
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005829
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000266
+      reference: GO_REF:0000119
+      with_objects:
+      - UniProtKB:P00338
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0006089
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - UniProtKB:P00338
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015551/6ab067da00015610
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - UniProtKB:P00338
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015551/6ab067da00015572
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000250
+      reference: GO_REF:0000024
+      with_objects:
+      - UniProtKB:P00338
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015551/6ab067da00015618
+molecules:
+- id: gomodel:6ab067da00015551/6ab067da00015574
+  term: CHEBI:15361
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005759
+- id: gomodel:6ab067da00015551/6ab067da00015610
+  term: CHEBI:16651
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005829
+- id: gomodel:6ab067da00015551/6ab067da00015572
+  term: CHEBI:15361
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005829
+- id: gomodel:6ab067da00015551/6ab067da00015608
+  term: CHEBI:16651
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:29026134
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - https://www.uniprot.org
+    term: GO:0005576
+- id: gomodel:6ab067da00015551/6ab067da00015618
+  term: CHEBI:57945
+objects:
+- id: GO:0050833
+  label: pyruvate transmembrane transporter activity
+  type: gocam:Object
+- id: MGI:MGI:1915240
+  label: Mpc1 Mmus
+  type: gocam:Object
+- id: CHEBI:15361
+  label: pyruvate
+  type: gocam:Object
+- id: GO:0005829
+  label: cytosol
+  type: gocam:Object
+- id: GO:0005759
+  label: mitochondrial matrix
+  type: gocam:Object
+- id: GO:0005743
+  label: mitochondrial inner membrane
+  type: gocam:Object
+- id: GO:0006850
+  label: pyruvate import into mitochondria
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0015129
+  label: lactate transmembrane transporter activity
+  type: gocam:Object
+- id: MGI:MGI:106013
+  label: Slc16a1 Mmus
+  type: gocam:Object
+- id: CHEBI:16651
+  label: (S)-lactate
+  type: gocam:Object
+- id: GO:0005576
+  label: extracellular region
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: GO:1990484
+  label: aerobic lactate catabolic process
+  type: gocam:Object
+- id: GO:0004459
+  label: L-lactate dehydrogenase (NAD+) activity
+  type: gocam:Object
+- id: MGI:MGI:96759
+  label: Ldha Mmus
+  type: gocam:Object
+- id: CHEBI:57945
+  label: NADH(2-)
+  type: gocam:Object
+- id: GO:0006089
+  label: lactate metabolic process
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000266
+  label: sequence orthology evidence used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0001-7299-6685
+  date: '2026-11-16'
+  provided_by:
+  - http://geneontology.org
+  - https://www.uniprot.org
