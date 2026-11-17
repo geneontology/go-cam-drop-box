@@ -28,7 +28,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:87917
+      - MGI:MGI:87917
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -51,7 +51,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:87917
+      - MGI:MGI:87917
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -71,7 +71,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:87917
+        - MGI:MGI:87917
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -91,7 +91,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:87917
+      - MGI:MGI:87917
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -131,7 +131,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:87917
+      - MGI:MGI:87917
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -174,7 +174,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1098296
+      - MGI:MGI:1098296
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -217,7 +217,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:1098296
+        - MGI:MGI:1098296
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -257,7 +257,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:1098296
+        - MGI:MGI:1098296
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -277,7 +277,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1098296
+      - MGI:MGI:1098296
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -298,7 +298,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1098296
+      - MGI:MGI:1098296
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -318,7 +318,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1098296
+      - MGI:MGI:1098296
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -340,7 +340,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2140940
+      - MGI:MGI:2140940
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -363,7 +363,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2140940
+      - MGI:MGI:2140940
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -383,7 +383,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:2140940
+        - MGI:MGI:2140940
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -403,7 +403,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2140940
+      - MGI:MGI:2140940
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -423,7 +423,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:2140940
+        - MGI:MGI:2140940
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -443,7 +443,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2140940
+      - MGI:MGI:2140940
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -463,7 +463,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2140940
+      - MGI:MGI:2140940
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -485,7 +485,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:88494
+      - MGI:MGI:88494
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -508,7 +508,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:88494
+      - MGI:MGI:88494
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -630,7 +630,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:99572
+        - MGI:MGI:99572
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -668,7 +668,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:99572
+        - MGI:MGI:99572
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -707,13 +707,14 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:99572
+      - MGI:MGI:99572
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
         date: '2026-11-16'
         provided_by:
         - https://www.uniprot.org
+        - http://geneontology.org
     - term: ECO:0000314
       reference: PMID:32193322
       provenances:
@@ -737,8 +738,8 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1336173
-      - MGI:2145955
+      - MGI:MGI:1336173
+      - MGI:MGI:2145955
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -779,8 +780,8 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:1336173
-        - MGI:2145955
+        - MGI:MGI:1336173
+        - MGI:MGI:2145955
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -800,8 +801,8 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2145955
-      - MGI:1336173
+      - MGI:MGI:2145955
+      - MGI:MGI:1336173
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -821,8 +822,8 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2145955
-      - MGI:1336173
+      - MGI:MGI:2145955
+      - MGI:MGI:1336173
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -842,8 +843,8 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2145955
-      - MGI:1336173
+      - MGI:MGI:2145955
+      - MGI:MGI:1336173
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -864,8 +865,8 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2145955
-      - MGI:1336173
+      - MGI:MGI:2145955
+      - MGI:MGI:1336173
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -885,8 +886,8 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:2145955
-      - MGI:1336173
+      - MGI:MGI:2145955
+      - MGI:MGI:1336173
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -930,7 +931,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:95777
+      - MGI:MGI:95777
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -950,7 +951,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:95777
+        - MGI:MGI:95777
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -988,7 +989,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:95777
+        - MGI:MGI:95777
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -1068,7 +1069,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:95674
+      - MGI:MGI:95674
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1106,7 +1107,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:95674
+        - MGI:MGI:95674
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -1188,7 +1189,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1928738
+      - MGI:MGI:1928738
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1208,7 +1209,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:1928738
+      - MGI:MGI:1928738
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1228,7 +1229,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:1928738
+        - MGI:MGI:1928738
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -1331,7 +1332,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:109176
+        - MGI:MGI:109176
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -1351,7 +1352,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:109176
+      - MGI:MGI:109176
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1397,7 +1398,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:109176
+      - MGI:MGI:109176
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1419,7 +1420,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:97592
+      - MGI:MGI:97592
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1460,7 +1461,7 @@ activities:
       - term: ECO:0000250
         reference: GO_REF:0000024
         with_objects:
-        - MGI:97592
+        - MGI:MGI:97592
         provenances:
         - contributor:
           - https://orcid.org/0000-0002-2979-8613
@@ -1480,7 +1481,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:97592
+      - MGI:MGI:97592
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1520,12 +1521,13 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:97592
+      - MGI:MGI:97592
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
         date: '2026-11-16'
         provided_by:
+        - http://geneontology.org
         - https://www.uniprot.org
     provenances:
     - contributor:
@@ -1540,7 +1542,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:97592
+      - MGI:MGI:97592
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1561,7 +1563,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:97592
+      - MGI:MGI:97592
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1583,7 +1585,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:104740
+      - MGI:MGI:104740
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1606,7 +1608,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:104740
+      - MGI:MGI:104740
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1626,7 +1628,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:104740
+      - MGI:MGI:104740
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
@@ -1665,7 +1667,7 @@ activities:
     - term: ECO:0000250
       reference: GO_REF:0000024
       with_objects:
-      - MGI:104740
+      - MGI:MGI:104740
       provenances:
       - contributor:
         - https://orcid.org/0000-0002-2979-8613
