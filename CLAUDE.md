@@ -62,6 +62,11 @@ optional, and they must agree exactly — CI compares them.
 ## Don't
 
 - Don't mint ids, don't reuse ids, don't rename the model — the dev id is the id.
+- Don't submit a model whose id already exists in `noctua-models` (a production
+  model, or one promoted from here earlier). CI refuses it; production models
+  are edited in Noctua. Check first:
+  `gh api repos/geneontology/noctua-models/contents/models/<id>.ttl?ref=master`
+  (404 = new).
 - Don't hand-edit the YAML or the TTL. Every edit goes through noctua-dev and
   a re-export, or the pair will disagree and CI will refuse it.
 - Don't invent ontology terms; every GO/RO/ECO/CHEBI/etc. id must be real and

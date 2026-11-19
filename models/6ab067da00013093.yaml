@@ -1,0 +1,380 @@
+id: gomodel:6ab067da00013093
+title: Cholesterol delivery to the plasma membrane by STARD5 and efflux by ABCA1 (Human)
+taxon: NCBITaxon:9606
+status: development
+date_modified: '2026-11-19'
+comments:
+- '2026-11-19 edits by ccasalsc (ORCID 0000-0001-8769-177X), agreed with Vitalina,
+  after review ~/review-6ab067da00013093-STARD5-ABCA1: (1) ABCA1 MF GO:0120020 ->
+  GO:0034041 ABC-type sterol transporter activity (RHEA:39051, EXP PMID:35974019);
+  (2) STARD5 occurs in cytosol: PMID:19474188 -> PMID:15897605 (human liver cytosolic
+  fractions); (3) intracellular cholesterol transport part of response to ER stress:
+  IDA PMID:31015253 (mouse hepatocyte KO) -> IMP PMID:40362395 (Fig. 4, Ad-CMV-hStarD5
+  rescue in StarD5-/- liver); (4) STARD5 part of intracellular cholesterol transport:
+  IDA -> IMP PMID:31015253 (Fig. 4, human StarD5 overexpression).'
+- ABCA1 evidence PMID:11162594 and PMID:19556522 taken from existing experimental
+  annotations; read as abstract only in this build. Built 2026-11-03 from review of
+  gomodel:689e7a5d00005729.
+- Curated with GO AI HUB. STARD5 transfers ER-derived cholesterol to the plasma membrane,
+  where ABCA1 exports it to apoA-I (cholesterol efflux); STARD5 acts in the ER-stress
+  response.
+- 'Not modelled: ER-stress induction of STARD5 via XBP1 (PMID:23053693, mouse 3T3-L1
+  only; XBP-1(s) overexpression raises Stard5 mRNA, promoter reporter not responsive,
+  mRNA stabilized; IRE1 not tested). NPC1 not modelled: no evidence of a causal link
+  to STARD5.'
+- 'STARD5 input cholesterol deliberately left without a location: no paper measures
+  the source compartment. ER is the authors'' model (PMID:31015253), and PMID:23053693
+  proposes ER to Golgi; PMID:15897605 reports overexpression raising microsomal cholesterol.'
+- 'STARD5->ABCA1 link: shared plasma-membrane cholesterol node. Supporting data PMID:31015253
+  Fig. 1D: StarD5-/- mouse peritoneal macrophages show reduced ABCA1-dependent cholesterol
+  efflux to apoA1; cyclosporine A abolishes the WT/KO difference; Ad-human StarD5
+  rescues efflux (mouse cells, human protein).'
+activities:
+- id: gomodel:6ab067da00013093/6ab067da00013101
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11162594
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:O95477
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0034041
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19556522
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000250
+        reference: GO_REF:0000024
+        with_objects:
+        - MGI:MGI:99607
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-11-19'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000235
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11162594
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0033344
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11162594
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00013093/6ab067da00013099
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11162594
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00013093/6ab067da00013105
+- id: gomodel:6ab067da00013093/6ab067da00013094
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31015253
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q9NSY2
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0120020
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:15897605
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005829
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:16534142
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-11-19'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000235
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:31015253
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0032367
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:40362395
+        provenances:
+        - contributor:
+          - https://orcid.org/0009-0002-7487-1936
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-11-19'
+          provided_by:
+          - http://geneontology.org
+          - https://holthuis-lab-uos.de
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - https://holthuis-lab-uos.de
+      term: GO:0034976
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31015253
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00013093/6ab067da00013098
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31015253
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00013093/6ab067da00013099
+molecules:
+- id: gomodel:6ab067da00013093/6ab067da00013099
+  term: CHEBI:16113
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:31015253
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+- id: gomodel:6ab067da00013093/6ab067da00013105
+  term: CHEBI:16113
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:11162594
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-03'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-03'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0009897
+- id: gomodel:6ab067da00013093/6ab067da00013098
+  term: CHEBI:16113
+objects:
+- id: GO:0120020
+  label: cholesterol transfer activity
+  type: gocam:Object
+- id: UniProtKB:Q9NSY2
+  label: STARD5 Hsap
+  type: gocam:Object
+- id: GO:0005829
+  label: cytosol
+  type: gocam:Object
+- id: GO:0032367
+  label: intracellular cholesterol transport
+  type: gocam:Object
+- id: CHEBI:16113
+  label: cholesterol
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: GO:0034041
+  label: ABC-type sterol transporter activity
+  type: gocam:Object
+- id: UniProtKB:O95477
+  label: ABCA1 Hsap
+  type: gocam:Object
+- id: GO:0033344
+  label: cholesterol efflux
+  type: gocam:Object
+- id: GO:0009897
+  label: external side of plasma membrane
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: GO:0034976
+  label: response to endoplasmic reticulum stress
+  type: gocam:Object
+- id: CL:0000235
+  label: macrophage
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0001-8769-177X
+  - https://orcid.org/0009-0002-7487-1936
+  date: '2026-11-19'
+  provided_by:
+  - http://geneontology.org
+  - https://holthuis-lab-uos.de
+  - https://www.uniprot.org

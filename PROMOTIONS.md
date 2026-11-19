@@ -107,3 +107,36 @@ molecules, evidence). Promoted in the batch of 2026-10-08 above.
 | `gomodel:6ab067da00010281` | #72 | `gomodel:6ab067da00010281` | development | OVOL2 acts upstream of the PRDM16-C/EBPbeta-PGC-1alpha-PPARgamma cascade and CIDEA-LXRalpha derepression controlling UCP1 in brown/beige adipocytes (Mouse) |
 
 Removed from `models/` here by this batch's removal PR. Later removal from production, if ever, is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so a revert of the port commit conflicts).
+
+## Batch 2026-11-05 (noctua outage, noctua#1144)
+
+24 model(s), submitted as id-matched YAML + Turtle pairs (contract of 2026-09-24) and staged from this repo at `62a1d99f7028`. The Turtle files were copied into `noctua-models` unchanged (comment and state as set on noctua-dev by the curator), as one commit (`197eab8e`), then re-serialised by the outage's journal flush (`62c2a8c6`). Ids were not re-minted.
+
+| drop-box id | drop-box PR | noctua-models id | modelstate | title |
+|---|---|---|---|---|
+| `gomodel:6ab067da00002482` | #77 | `gomodel:6ab067da00002482` | development | Rod-rod bipolar postsynapse organization via LRIT3_Visual Perception (Human) |
+| `gomodel:6ab067da00005098` | #76 | `gomodel:6ab067da00005098` | development | Cone-ON bipolar postsynapse organization via LRIT3_Visual Perception (Human) |
+| `gomodel:6ab067da00005438` | #96 | `gomodel:6ab067da00005438` | development | UTS2-induced vascular SMC proliferation via RHOA-ROCK2 (Rat) |
+| `gomodel:6ab067da00005905` | #94 | `gomodel:6ab067da00005905` | development | Oxyntomodulin production and secretion by L cells (Human) |
+| `gomodel:6ab067da00006950` | #92 | `gomodel:6ab067da00006950` | development | Positive regulation of gluconeogenesis by OXM/GCGR (Human) |
+| `gomodel:6ab067da00007187` | #93 | `gomodel:6ab067da00007187` | development | Oxyntomodulin biosynthesis in intestinal L cell (Human) |
+| `gomodel:6ab067da00007273` | #90 | `gomodel:6ab067da00007273` | development | Positive regulation of gluconeogenesis by glucagon/GCGR (Human) |
+| `gomodel:6ab067da00008260` | #79 | `gomodel:6ab067da00008260` | development | GPR179 and RGS9BP organize RGS7/RGS11-Gbeta5 GAP activity on Galpha-o to enable TRPM1 gating in ON-bipolar cells_Visual Perception (Human) |
+| `gomodel:6ab067da00008944` | #91 | `gomodel:6ab067da00008944` | development | Glucagon processing in pancreatic A cell (Human) |
+| `gomodel:6ab067da00010366` | #82 | `gomodel:6ab067da00010366` | development | PTEN in excitatory hippocampal synapse long-term depression (Human) |
+| `gomodel:6ab067da00010445` | #74 | `gomodel:6ab067da00010445` | development | Negative regulation of Ros1 signaling by Ptpn6 in epididymis (Mouse) |
+| `gomodel:6ab067da00010463` | #75 | `gomodel:6ab067da00010463` | development | Negative regulation of ROS1 signaling by PTPN6 in epididymis (Human) |
+| `gomodel:6ab067da00010509` | #78 | `gomodel:6ab067da00010509` | development | GPR179 positive regulation of TRPM1 channel gating in ON-bipolar cells_Visual Perception (Human) |
+| `gomodel:6ab067da00011241` | #95 | `gomodel:6ab067da00011241` | development | Calcitonin biosynthesis in thyroid C cell (Human) |
+| `gomodel:6ab067da00011397` | #80 | `gomodel:6ab067da00011397` | production | Nociceptor-derived Reg3g suppresses the microglial kynurenine pathway and protects neuronal ATP production in endotoxemia (Mouse) |
+| `gomodel:6ab067da00011565` | #81 | `gomodel:6ab067da00011565` | production | REG3G-EXTL3 signalling suppresses the kynurenine pathway and protects HK1-dependent glycolysis (Human) |
+| `gomodel:6ab067da00011840` | #83 | `gomodel:6ab067da00011840` | development | (CHRNA4)3:(CHRNB2)2 nicotinic acetylcholine receptor in the cholinergic synapse acetylcholine cycle, calcium-potentiated (Human) |
+| `gomodel:6ab067da00011841` | #84 | `gomodel:6ab067da00011841` | development | (CHRNA4)2:(CHRNB2)3 nicotinic acetylcholine receptor in the cholinergic synapse acetylcholine cycle (Human) |
+| `gomodel:6ab067da00011842` | #85 | `gomodel:6ab067da00011842` | development | (CHRNA7)3:(CHRNB2)2 nicotinic acetylcholine receptor activated by acetylcholine and oligomeric amyloid-beta (Human) |
+| `gomodel:6ab067da00012084` | #86 | `gomodel:6ab067da00012084` | development | Slc18a3 and Ache regulate alpha4beta2-type nicotinic acetylcholine receptor activity at cholinergic synapses (Mouse) |
+| `gomodel:6ab067da00013382` | #97 | `gomodel:6ab067da00013382` | production | EDA2R-NIK-myomixer signaling in myoblast fusion (Mouse) |
+| `gomodel:6ab067da00013825` | #98 | `gomodel:6ab067da00013825` | production | EDA2R-NIK-myomixer signaling in myoblast fusion (Human) |
+| `gomodel:6ab067da00013918` | #99 | `gomodel:6ab067da00013918` | production | TWEAK-Fn14 NF-kB signaling in myoblast fusion (Mouse) |
+| `gomodel:6ab067da00014102` | #100 | `gomodel:6ab067da00014102` | production | TWEAK-Fn14 NF-kB signaling in myoblast fusion (Human) |
+
+Removed from `models/` here by this batch's removal PR. Later removal from production, if ever, is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so a revert of the port commit conflicts).
