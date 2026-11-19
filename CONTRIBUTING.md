@@ -53,6 +53,13 @@ and become production models **under the same id**; the pair is then removed
 from `models/` and recorded in [`PROMOTIONS.md`](PROMOTIONS.md). Once merged,
 the drop box is the source of truth for that model until it is promoted.
 
+The drop box takes **new models only**. A model whose id already exists in
+`noctua-models` is a production model: edit it in Noctua. CI refuses a
+submission that carries such an id (this includes a model promoted from here
+earlier, and a production model that was copied to noctua-dev under its
+production id). A reworked version that should be a new model needs a new id
+from noctua-dev.
+
 ## Provenance a submission wants recorded
 
 Put it in the model, not in this repo's files. A model recovered from a legacy
