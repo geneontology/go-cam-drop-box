@@ -43,13 +43,10 @@ jobs:
           fi
           echo "scope ok: models/ only"
 
-      # The drop box takes NEW models only. An id that already has a file in
-      # noctua-models is a production model: it is edited in Noctua, and the
-      # promotion step refuses it anyway (filename collision). Checked per file
-      # through the contents API (models/ there is too large to list). 200 =
-      # exists, 404 = new; anything else fails, so an API error never passes a
-      # collision. Removal PRs (promoted-*) delete ids that are in production by
-      # definition, so maintenance branches are skipped, as above.
+      # New models only: an id with a file in noctua-models is a production model.
+      # One contents-API call per id (models/ there is too large to list); any
+      # answer but 200 or 404 fails, so an API error never passes a collision.
+      # Maintenance branches are skipped: a removal PR deletes ids that are in production.
       - name: New models only (id not already in noctua-models)
         if: github.event_name == 'pull_request'
         env:
