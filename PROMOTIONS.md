@@ -140,3 +140,23 @@ Removed from `models/` here by this batch's removal PR. Later removal from produ
 | `gomodel:6ab067da00014102` | #100 | `gomodel:6ab067da00014102` | production | TWEAK-Fn14 NF-kB signaling in myoblast fusion (Human) |
 
 Removed from `models/` here by this batch's removal PR. Later removal from production, if ever, is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so a revert of the port commit conflicts).
+
+## Batch 2026-11-19 (noctua outage, noctua#1152)
+
+11 model(s), submitted as id-matched YAML + Turtle pairs (contract of 2026-09-24) and staged from this repo at `0652460debc4`. The Turtle files were copied into `noctua-models` unchanged (comment and state as set on noctua-dev by the curator), as one commit (`aee2b9fb`), then re-serialised by the outage's journal flush (`ded3eab2`). Ids were not re-minted.
+
+| drop-box id | drop-box PR | noctua-models id | modelstate | title |
+|---|---|---|---|---|
+| `gomodel:6ab067da00013093` | #110 | `gomodel:6ab067da00013093` | development | Cholesterol delivery to the plasma membrane by STARD5 and efflux by ABCA1 (Human) |
+| `gomodel:6ab067da00013223` | #109 | `gomodel:6ab067da00013223` | development | Fatty acid beta-oxidation via glucagon-AMPK-Acacb (Mouse) |
+| `gomodel:6ab067da00014325` | #103 | `gomodel:6ab067da00014325` | development | Negative regulation of IGF1R signaling by STC1 (Human) |
+| `gomodel:6ab067da00014326` | #104 | `gomodel:6ab067da00014326` | development | Negative regulation of IGF1R signaling by STC2 (Human) |
+| `gomodel:6ab067da00014629` | #102 | `gomodel:6ab067da00014629` | development | Vascular smooth muscle relaxation by CALCB/beta-CGRP (Human) |
+| `gomodel:6ab067da00015433` | #105 | `gomodel:6ab067da00015433` | development | In heart, Slc16a1 directly transports lactate into mitochondria for conversion to pyruvate by Ldhb, fueling the electron transport chain (Mouse). |
+| `gomodel:6ab067da00015551` | #106 | `gomodel:6ab067da00015551` | development | Lactate is imported into the cytosol by Slc16a1 and then converted into pyruvate by Ldha before import into the mitochondria by Mpc1 (Mouse). |
+| `gomodel:6ab067da00015739` | #107 | `gomodel:6ab067da00015739` | development | In heart, SLC16A1 directly transports lactate into mitochondria for conversion to pyruvate by LDHB, fueling the electron transport chain (Human). |
+| `gomodel:6ab067da00015846` | #111 | `gomodel:6ab067da00015846` | review | G-CSF regulates neutrophil differentiation (Mouse) |
+| `gomodel:6ab067da00016373` | #108 | `gomodel:6ab067da00016373` | development | Fatty acid beta-oxidation via glucagon-AMPK-ACACB (Human) |
+| `gomodel:6ab067da00016799` | #112 | `gomodel:6ab067da00016799` | review | G-CSF regulates common myeloid cell proliferation (Mouse) |
+
+Removed from `models/` here by this batch's removal PR. Later removal from production, if ever, is an exact-path `git rm` in `noctua-models` (the flush rewrote the files, so a revert of the port commit conflicts).
