@@ -1,0 +1,421 @@
+id: gomodel:6ab067da00015433
+title: In heart, Slc16a1 directly transports lactate into mitochondria for conversion
+  to pyruvate by Ldhb, fueling the electron transport chain (Mouse).
+taxon: NCBITaxon:10090
+status: development
+date_modified: '2026-11-16'
+comments:
+- Built from PMID:42951956 (Cluntun et al., Nature 659:523-531, 2026). MCT1 (Slc16a1)
+  imports lactate across the inner mitochondrial membrane; matrix LDHB oxidises it
+  to pyruvate + NADH, feeding the ETC in parallel to the canonical MPC/pyruvate route.
+  The mitochondrial lactate individual is shared between the MCT1 'has output' and
+  the LDHB 'has input' (handoff), so 'provides input for' is inferred and not materialised.
+- 'Caveat on LDHA directionality: GO:0004459 is written as the reversible reaction,
+  and direction here is expressed by has input (lactate) / has output (pyruvate).
+  Note that LDHA kinetically favours the reverse direction (pyruvate -> lactate);
+  PMID:42951956 itself notes the lower Km of LDHB for pyruvate favours forward lactate
+  oxidation. The cytosolic LDH step is modelled with LDHA as the conventional-model
+  enzyme (Fig 1a of that paper), but LDHB or a generic LDH may be the better enabler
+  for net lactate oxidation.'
+- 'Curated with GO AI HUB. Mitochondrial lactate shortcut in mouse heart: Slc16a1
+  carries lactate across the inner mitochondrial membrane to matrix Ldhb, which oxidises
+  it to pyruvate + NADH (PMID:42951956).'
+- 'Curation notes: (1) MCT1 MF uses GO:0015129 (lactate transmembrane transporter
+  activity) rather than the child GO:0015650 (lactate:proton symporter activity) because
+  this paper does not test proton coupling at the IMM; GO:0015650 is already held
+  by Slc16a1 via IBA/ISS. (2) MPC is an obligate MPC1/MPC2 heterodimer but has no
+  ComplexPortal entry, so the pyruvate transport unit is enabled by Mpc1 alone. (3)
+  MPC1 ''occurs in'' mitochondrial inner membrane is IDA from mitochondrial fractionation
+  (Figs 1j, 2c); the IMM granularity leans on established prior knowledge. (4) Heart-failure,
+  TAC and ischemia-reperfusion phenotypes are organism-level consequences and are
+  deliberately not modelled as activities.'
+- 'Cytosolic route added 2026-11-12: plasma-membrane MCT1 (Slc16a1) imports extracellular
+  lactate into the cytosol; cytosolic LDHA oxidises it to pyruvate + NADH; that pyruvate
+  is the same individual MPC1 imports into the matrix (handoff chain PM-MCT1 -> LDHA
+  -> MPC1). IMPORTANT: these two units are NOT referenced to PMID:42951956. That paper
+  reports the opposite for cardiomyocytes - cytosolic lactate uptake and pyruvate
+  production were UNAFFECTED by loss of MCT1 (Fig 2d,e), and tissue lactate/pyruvate
+  enrichment was unchanged, which is how the authors isolate the mitochondrial role
+  from the plasma-membrane one. The PM unit is therefore evidenced by PMID:29026134
+  (MCT1 knockdown reduces plasma-membrane lactate flux, mouse adipocytes) and the
+  LDHA unit by PMID:21041631 and PMID:17572440. Only the cardiomyocyte/heart context
+  of the PM unit cites PMID:42951956.'
+activities:
+- id: gomodel:6ab067da00015433/6ab067da00015444
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:96763
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004459
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005759
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:42951956
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7299-6685
+          date: '2026-11-12'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000746
+      part_of:
+        type: GrossAnatomyAssociation
+        evidence:
+        - term: ECO:0000314
+          reference: PMID:42951956
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0001-7299-6685
+            date: '2026-11-12'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7299-6685
+          date: '2026-11-12'
+          provided_by:
+          - http://geneontology.org
+        term: UBERON:0000948
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: GO:1990484
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015433/6ab067da00015438
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015433/6ab067da00015446
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015433/6ab067da00015447
+- id: gomodel:6ab067da00015433/6ab067da00015434
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:106013
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0015129
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005743
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:42951956
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7299-6685
+          date: '2026-11-12'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000746
+      part_of:
+        type: GrossAnatomyAssociation
+        evidence:
+        - term: ECO:0000314
+          reference: PMID:42951956
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0001-7299-6685
+            date: '2026-11-12'
+            provided_by:
+            - http://geneontology.org
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-7299-6685
+          date: '2026-11-12'
+          provided_by:
+          - http://geneontology.org
+        term: UBERON:0000948
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: GO:1990484
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:6ab067da00015433/6ab067da00015438
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015433/6ab067da00015436
+molecules:
+- id: gomodel:6ab067da00015433/6ab067da00015438
+  term: CHEBI:16651
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005759
+- id: gomodel:6ab067da00015433/6ab067da00015446
+  term: CHEBI:15361
+- id: gomodel:6ab067da00015433/6ab067da00015436
+  term: CHEBI:16651
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:42951956
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-7299-6685
+        date: '2026-11-12'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0001-7299-6685
+      date: '2026-11-12'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005829
+- id: gomodel:6ab067da00015433/6ab067da00015447
+  term: CHEBI:57945
+objects:
+- id: GO:0015129
+  label: lactate transmembrane transporter activity
+  type: gocam:Object
+- id: MGI:MGI:106013
+  label: Slc16a1 Mmus
+  type: gocam:Object
+- id: CHEBI:16651
+  label: (S)-lactate
+  type: gocam:Object
+- id: GO:0005829
+  label: cytosol
+  type: gocam:Object
+- id: GO:0005759
+  label: mitochondrial matrix
+  type: gocam:Object
+- id: GO:0005743
+  label: mitochondrial inner membrane
+  type: gocam:Object
+- id: GO:1990484
+  label: aerobic lactate catabolic process
+  type: gocam:Object
+- id: CL:0000746
+  label: cardiac muscle cell
+  type: gocam:Object
+- id: UBERON:0000948
+  label: heart
+  type: gocam:Object
+- id: GO:0004459
+  label: L-lactate dehydrogenase (NAD+) activity
+  type: gocam:Object
+- id: MGI:MGI:96763
+  label: Ldhb Mmus
+  type: gocam:Object
+- id: CHEBI:15361
+  label: pyruvate
+  type: gocam:Object
+- id: CHEBI:57945
+  label: NADH(2-)
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0001-7299-6685
+  date: '2026-11-16'
+  provided_by:
+  - http://geneontology.org
+  - https://www.uniprot.org
