@@ -70,6 +70,26 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000250
+        reference: GO_REF:0000024
+        with_objects:
+        - MGI:MGI:99607
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-11-19'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000235
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -166,6 +186,24 @@ activities:
       provided_by:
       - http://geneontology.org
     term: GO:0005829
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:16534142
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0001-8769-177X
+          date: '2026-11-19'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0001-8769-177X
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000235
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -324,6 +362,12 @@ objects:
   type: gocam:Object
 - id: GO:0034976
   label: response to endoplasmic reticulum stress
+  type: gocam:Object
+- id: CL:0000235
+  label: macrophage
+  type: gocam:Object
+- id: ECO:0000250
+  label: sequence similarity evidence used in manual assertion
   type: gocam:Object
 provenances:
 - contributor:
