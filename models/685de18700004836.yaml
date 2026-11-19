@@ -1,0 +1,1115 @@
+id: gomodel:685de18700004836
+title: CERS2 glucosylceramide synthesis (Human)
+taxon: NCBITaxon:9606
+status: development
+date_modified: '2026-11-19'
+comments:
+- 'Automated change 2025-08-14: GO:0010706 replaced by GO:0001574'
+- Curated with GO AI HUB. Human de novo synthesis of C22 (CERS2) ceramide at the ER
+  (SPT, KDSR, CERS2, DEGS1), CERT-independent delivery to UGCG at the Golgi for glucosylceramide
+  synthesis, and GlcCer translocation by ABCA3/ABCB10.
+- ER-to-Golgi transport of ceramide for glucosylceramide synthesis is CERT-independent
+  (PMID:14685229, PMID:18068681, PMID:27775668). A COPII-vesicle route has been proposed
+  (PMID:41856286) and a non-vesicular route reported (PMID:9677340). No mammalian
+  gene product with a defined molecular function has been shown to carry ceramide
+  to UGCG, so no transport activity is modelled. The step is shown as DEGS1 'provides
+  input for' UGCG, with ceramide (CHEBI:72966) located in the cytoplasmic side of
+  the ER membrane as DEGS1 output and in the cytoplasmic side of the Golgi membrane
+  as UGCG input.
+- 'Edited 2026-09-25 (claude4go with curator): ABCA3 and ABCB10 activity units only,
+  per repair of the companion model gomodel:680ad14200005180 from full text of Budani
+  2021 PMID:34597626. MF GO:0140351 glycosylceramide flippase (exoplasmic-to-cytosolic)
+  replaced by GO:0034202 glycolipid floppase activity (cytosolic-to-lumenal). ABCB10
+  part_of galactosylceramide biosynthetic process removed (DU-145 cells make essentially
+  no GalCer and GlcCer is not a GalCer precursor); both transporters now part_of GO:0006688
+  glycosphingolipid biosynthetic process (IMP; each KD reduced both globo-series and
+  GM3 de novo synthesis). CC broadened from cis-Golgi network membrane to GO:0000139
+  Golgi membrane. Transporter MF, input, output, location and CC evidence are IC (binding
+  plus KD phenotype; no transport assay or localization in the paper). UGCG now has
+  a second GlcCer output individual feeding ABCB10, so the two transporter units share
+  no molecule individual; lumenal GlcCer outputs are placed at the lumenal side of
+  Golgi membrane. Other activity units untouched.'
+- 'Follow-up 2026-09-25: curator does not accept the floppase reading for Golgi GlcCer
+  translocation (cytoplasmic to lumenal leaflet). GO defines flippase/floppase topologically
+  (exoplasmic vs cytosolic leaflet; the Golgi lumenal leaflet is exoplasmic), the
+  paper itself does not assay direction, and the curator chose the direction-neutral
+  parent GO:0140326 ATPase-coupled intramembrane lipid carrier activity, which already
+  carries EXP annotations for ABCA3 and ABCA12. GO:0034202 glycolipid floppase activity
+  therefore replaced by GO:0140326 on the ABC transporter unit(s) in this model. A
+  GO ticket on whether GO:0140351 should cover Golgi lumenal import, or an NTR for
+  a GlcCer-specific term, remains an option.'
+activities:
+- id: gomodel:685de18700004836/685de18700004923
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8643456
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q16739
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0008120
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:17923531
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000305
+      reference: PMID:1747103
+      with_objects:
+      - GO:0008120
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098548
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8643456
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    - term: ECO:0000315
+      reference: PMID:17687330
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0006679
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8643456
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/685de18700004920
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8643456
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:685de18700004836/685de18700004935
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8643456
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/685de18700004931
+- id: gomodel:685de18700004836/685de18700004868
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:29632068
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: UniProtKB:Q96G23
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0050291
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:36170811
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0098554
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:36170811
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0046513
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:29632068
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/6ab067da00017773
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:29632068
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:685de18700004836/685de18700004916
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:29632068
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/6ab067da00017769
+- id: gomodel:685de18700004836/685de18700004860
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:36170811
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: UniProtKB:Q06136
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0047560
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0098554
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:16120614
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0046513
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:36170811
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:685de18700004836/6ab067da00017769
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:36170811
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/6ab067da00017766
+- id: gomodel:685de18700004836/685de18700004837
+  enabled_by:
+    type: EnabledByProteinComplexAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0017059
+    has_part:
+    - type: ProteinComplexHasPartAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:19416851
+        provenances:
+        - contributor:
+          - https://orcid.org/0009-0002-7487-1936
+          date: '2025-07-04'
+          provided_by:
+          - https://holthuis-lab-uos.de
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+      term: UniProtKB:O15269
+    - type: ProteinComplexHasPartAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:19416851
+        provenances:
+        - contributor:
+          - https://orcid.org/0009-0002-7487-1936
+          date: '2025-07-04'
+          provided_by:
+          - https://holthuis-lab-uos.de
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+      term: UniProtKB:Q969W0
+    - type: ProteinComplexHasPartAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:19416851
+        provenances:
+        - contributor:
+          - https://orcid.org/0009-0002-7487-1936
+          date: '2025-07-04'
+          provided_by:
+          - https://holthuis-lab-uos.de
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+      term: UniProtKB:O15270
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004758
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0098554
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0046513
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:685de18700004836/6ab067da00017766
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/685de18700004853
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/685de18700004850
+- id: gomodel:685de18700004836/685de18700004880
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:30620338
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: UniProtKB:O15121
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0042284
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:16120614
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0098554
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:16120614
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0046513
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:30620338
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/685de18700004916
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:30620338
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:685de18700004836/6ab067da00017716
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:30620338
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002413
+    downstream_activity: gomodel:685de18700004836/685de18700004923
+- id: gomodel:685de18700004836/6ab067da00001398
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:34597626
+      with_objects:
+      - GO:0006688
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-09-25'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-09-25'
+      provided_by:
+      - http://geneontology.org
+    term: UniProtKB:Q99758
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0140326
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:34597626
+      with_objects:
+      - GO:0006688
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-09-25'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-09-25'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0000139
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:34597626
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-09-25'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-09-25'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0006688
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:34597626
+      with_objects:
+      - GO:0006688
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-09-25'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-09-25'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002234
+    molecule: gomodel:685de18700004836/6ab067da00001349
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:34597626
+      with_objects:
+      - GO:0006688
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-09-25'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-09-25'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:685de18700004836/685de18700004935
+molecules:
+- id: gomodel:685de18700004836/685de18700004916
+  term: CHEBI:67021
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000304
+      reference: PMID:20222015
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098554
+- id: gomodel:685de18700004836/6ab067da00017773
+  term: CHEBI:65059
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:36170811
+      with_objects:
+      - GO:0050291
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098554
+- id: gomodel:685de18700004836/6ab067da00017769
+  term: CHEBI:57817
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:19416851
+      with_objects:
+      - GO:0047560
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098554
+- id: gomodel:685de18700004836/6ab067da00001349
+  term: CHEBI:62107
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:34597626
+      with_objects:
+      - GO:0006688
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-09-25'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-09-25'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098547
+- id: gomodel:685de18700004836/685de18700004920
+  term: CHEBI:72966
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:17923531
+      with_objects:
+      - GO:0008120
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098548
+- id: gomodel:685de18700004836/685de18700004935
+  term: CHEBI:62107
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:17923531
+      with_objects:
+      - GO:0008120
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098548
+- id: gomodel:685de18700004836/6ab067da00017766
+  term: CHEBI:58299
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:19416851
+      with_objects:
+      - GO:0004758
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098554
+- id: gomodel:685de18700004836/685de18700004853
+  term: CHEBI:33384
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:16120614
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0005829
+- id: gomodel:685de18700004836/6ab067da00017716
+  term: CHEBI:72966
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:30620338
+      with_objects:
+      - GO:0042284
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0098554
+- id: gomodel:685de18700004836/685de18700004931
+  term: CHEBI:46229
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000305
+      reference: PMID:34080016
+      with_objects:
+      - GO:0008120
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005829
+- id: gomodel:685de18700004836/685de18700004850
+  term: CHEBI:57379
+  located_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19416851
+      provenances:
+      - contributor:
+        - https://orcid.org/0009-0002-7487-1936
+        date: '2025-07-04'
+        provided_by:
+        - https://holthuis-lab-uos.de
+    provenances:
+    - contributor:
+      - https://orcid.org/0009-0002-7487-1936
+      date: '2025-07-04'
+      provided_by:
+      - https://holthuis-lab-uos.de
+    term: GO:0098554
+objects:
+- id: GO:0000139
+  label: Golgi membrane
+  type: gocam:Object
+- id: GO:0006688
+  label: glycosphingolipid biosynthetic process
+  type: gocam:Object
+- id: CHEBI:62107
+  label: beta-D-glucosyl-N-(docosanoyl)sphingosine
+  type: gocam:Object
+- id: GO:0098547
+  label: lumenal side of Golgi membrane
+  type: gocam:Object
+- id: ECO:0000305
+  label: curator inference used in manual assertion
+  type: gocam:Object
+- id: GO:0140326
+  label: ATPase-coupled intramembrane lipid carrier activity
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: CHEBI:72966
+  label: N-docosanoylsphingosine
+  type: gocam:Object
+- id: GO:0098554
+  label: cytoplasmic side of endoplasmic reticulum membrane
+  type: gocam:Object
+- id: CHEBI:58299
+  label: 3-dehydrosphinganinium(1+)
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+- id: CHEBI:57817
+  label: sphinganine(1+)
+  type: gocam:Object
+- id: CHEBI:65059
+  label: docosanoyl-CoA(4-)
+  type: gocam:Object
+- id: ECO:0000304
+  label: author statement supported by traceable reference used in manual assertion
+  type: gocam:Object
+- id: GO:0098548
+  label: cytoplasmic side of Golgi membrane
+  type: gocam:Object
+- id: GO:0004758
+  label: serine C-palmitoyltransferase activity
+  type: gocam:Object
+- id: GO:0017059
+  label: serine palmitoyltransferase complex
+  type: gocam:Object
+- id: UniProtKB:Q969W0
+  label: SPTSSA Hsap
+  type: gocam:Object
+- id: UniProtKB:O15269
+  label: SPTLC1 Hsap
+  type: gocam:Object
+- id: UniProtKB:O15270
+  label: SPTLC2 Hsap
+  type: gocam:Object
+- id: GO:0046513
+  label: ceramide biosynthetic process
+  type: gocam:Object
+- id: CHEBI:57379
+  label: palmitoyl-CoA(4-)
+  type: gocam:Object
+- id: CHEBI:33384
+  label: L-serine zwitterion
+  type: gocam:Object
+- id: GO:0005829
+  label: cytosol
+  type: gocam:Object
+- id: GO:0047560
+  label: 3-dehydrosphinganine reductase activity
+  type: gocam:Object
+- id: UniProtKB:Q06136
+  label: KDSR Hsap
+  type: gocam:Object
+- id: GO:0050291
+  label: sphingosine N-acyltransferase activity
+  type: gocam:Object
+- id: UniProtKB:Q96G23
+  label: CERS2 Hsap
+  type: gocam:Object
+- id: GO:0042284
+  label: sphingolipid delta-4 desaturase activity
+  type: gocam:Object
+- id: UniProtKB:O15121
+  label: DEGS1 Hsap
+  type: gocam:Object
+- id: CHEBI:67021
+  label: N-docosanoylsphinganine
+  type: gocam:Object
+- id: GO:0008120
+  label: ceramide glucosyltransferase activity
+  type: gocam:Object
+- id: UniProtKB:Q16739
+  label: UGCG Hsap
+  type: gocam:Object
+- id: GO:0006679
+  label: glucosylceramide biosynthetic process
+  type: gocam:Object
+- id: CHEBI:46229
+  label: UDP-alpha-D-glucose
+  type: gocam:Object
+- id: UniProtKB:Q99758
+  label: ABCA3 Hsap
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0009-0002-7487-1936
+  date: '2026-11-19'
+  provided_by:
+  - http://geneontology.org
+  - https://holthuis-lab-uos.de
