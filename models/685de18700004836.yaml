@@ -7,7 +7,7 @@ comments:
 - 'Automated change 2025-08-14: GO:0010706 replaced by GO:0001574'
 - Curated with GO AI HUB. Human de novo synthesis of C22 (CERS2) ceramide at the ER
   (SPT, KDSR, CERS2, DEGS1), CERT-independent delivery to UGCG at the Golgi for glucosylceramide
-  synthesis, and GlcCer translocation by ABCA3/ABCB10.
+  synthesis, and GlcCer translocation by ABCA3.
 - ER-to-Golgi transport of ceramide for glucosylceramide synthesis is CERT-independent
   (PMID:14685229, PMID:18068681, PMID:27775668). A COPII-vesicle route has been proposed
   (PMID:41856286) and a non-vesicular route reported (PMID:9677340). No mammalian
@@ -16,19 +16,16 @@ comments:
   input for' UGCG, with ceramide (CHEBI:72966) located in the cytoplasmic side of
   the ER membrane as DEGS1 output and in the cytoplasmic side of the Golgi membrane
   as UGCG input.
-- 'Edited 2026-09-25 (claude4go with curator): ABCA3 and ABCB10 activity units only,
-  per repair of the companion model gomodel:680ad14200005180 from full text of Budani
-  2021 PMID:34597626. MF GO:0140351 glycosylceramide flippase (exoplasmic-to-cytosolic)
-  replaced by GO:0034202 glycolipid floppase activity (cytosolic-to-lumenal). ABCB10
-  part_of galactosylceramide biosynthetic process removed (DU-145 cells make essentially
-  no GalCer and GlcCer is not a GalCer precursor); both transporters now part_of GO:0006688
-  glycosphingolipid biosynthetic process (IMP; each KD reduced both globo-series and
-  GM3 de novo synthesis). CC broadened from cis-Golgi network membrane to GO:0000139
-  Golgi membrane. Transporter MF, input, output, location and CC evidence are IC (binding
-  plus KD phenotype; no transport assay or localization in the paper). UGCG now has
-  a second GlcCer output individual feeding ABCB10, so the two transporter units share
-  no molecule individual; lumenal GlcCer outputs are placed at the lumenal side of
-  Golgi membrane. Other activity units untouched.'
+- 'Edited 2026-09-25 (claude4go with curator): ABCA3 activity unit only, per repair
+  of the companion model gomodel:680ad14200005180 from full text of Budani 2021 PMID:34597626.
+  MF GO:0140351 glycosylceramide flippase (exoplasmic-to-cytosolic) replaced by GO:0034202
+  glycolipid floppase activity (cytosolic-to-lumenal). ABCB10 part_of galactosylceramide
+  biosynthetic process removed (DU-145 cells make essentially no GalCer and GlcCer
+  is not a GalCer precursor); both transporters now part_of GO:0006688 glycosphingolipid
+  biosynthetic process (IMP; each KD reduced both globo-series and GM3 de novo synthesis).
+  CC broadened from cis-Golgi network membrane to GO:0000139 Golgi membrane. Transporter
+  MF, input, output, location and CC evidence are IC (binding plus KD phenotype; no
+  transport assay or localization in the paper). '
 - 'Follow-up 2026-09-25: curator does not accept the floppase reading for Golgi GlcCer
   translocation (cytoplasmic to lumenal leaflet). GO defines flippase/floppase topologically
   (exoplasmic vs cytosolic leaflet; the Golgi lumenal leaflet is exoplasmic), the
