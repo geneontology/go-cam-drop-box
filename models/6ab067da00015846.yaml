@@ -1,0 +1,521 @@
+id: gomodel:6ab067da00015846
+title: G-CSF regulates neutrophil differentiation (Mouse)
+taxon: NCBITaxon:10090
+status: review
+date_modified: '2026-11-19'
+comments:
+- 'Comment to reviewer: activation of Stats is indirect as it requires some Jak phosphorylation.
+  But it is not clear which one is acitve there and if it acts by P the receptor or
+  the stats.'
+activities:
+- id: gomodel:6ab067da00015846/6ab067da00015939
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:7521686
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:1339751
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0005125
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:3489940
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-16'
+        provided_by:
+        - https://www.uniprot.org
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005576
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:9226159
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0038158
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:7521686
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-11-16'
+          provided_by:
+          - https://www.uniprot.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-16'
+        provided_by:
+        - https://www.uniprot.org
+      term: GO:0045660
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:7521686
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-19'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-19'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015846/6ab067da00017713
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:7521686
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-16'
+        provided_by:
+        - https://www.uniprot.org
+    - term: ECO:0000314
+      reference: PMID:10537111
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-16'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-16'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002629
+    downstream_activity: gomodel:6ab067da00015846/6ab067da00015957
+- id: gomodel:6ab067da00015846/6ab067da00015980
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8033213
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:104565
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004861
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:19056892
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-19'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-19'
+      provided_by:
+      - http://geneontology.org
+      - https://www.uniprot.org
+    term: GO:0005634
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:10918585
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-11-13'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000834
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:10918585
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0045660
+- id: gomodel:6ab067da00015846/6ab067da00015957
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:1717255
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:1339755
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0004902
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:8977235
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-19'
+        provided_by:
+        - http://geneontology.org
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0005886
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:11239451
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-11-13'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000834
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11239451
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-16'
+        provided_by:
+        - https://www.uniprot.org
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0038158
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:7489718
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-11-17'
+          provided_by:
+          - https://www.uniprot.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-16'
+        provided_by:
+        - https://www.uniprot.org
+      term: GO:0045660
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11239451
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-17'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-17'
+      provided_by:
+      - https://www.uniprot.org
+    predicate: RO:0002407
+    downstream_activity: gomodel:6ab067da00015846/6ab067da00015967
+- id: gomodel:6ab067da00015846/6ab067da00015967
+  enabled_by:
+    type: EnabledByGeneProductAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:10918585
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: MGI:MGI:103038
+  molecular_function:
+    type: MolecularFunctionAssociation
+    term: GO:0001228
+  occurs_in:
+    type: CellularAnatomicalEntityAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:10918585
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-19'
+        provided_by:
+        - https://www.uniprot.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-17'
+      provided_by:
+      - http://geneontology.org
+      - https://www.uniprot.org
+    term: GO:0005634
+    part_of:
+      type: CellTypeAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:11239451
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-11-13'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+      term: CL:0000834
+  part_of:
+    type: BiologicalProcessAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:11239451
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    term: GO:0038158
+    part_of:
+      type: BiologicalProcessAssociation
+      evidence:
+      - term: ECO:0000315
+        reference: PMID:11239451
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0002-8075-8625
+          date: '2026-11-17'
+          provided_by:
+          - https://www.uniprot.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-17'
+        provided_by:
+        - https://www.uniprot.org
+      term: GO:0045660
+  molecular_associations:
+  - type: MoleculeAssociation
+    evidence:
+    - term: ECO:0000314
+      reference: PMID:10918585
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002233
+    molecule: gomodel:6ab067da00015846/6ab067da00015978
+  causal_associations:
+  - type: CausalAssociation
+    evidence:
+    - term: ECO:0000315
+      reference: PMID:10918585
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0002-8075-8625
+        date: '2026-11-13'
+        provided_by:
+        - http://geneontology.org
+    provenances:
+    - contributor:
+      - https://orcid.org/0000-0002-8075-8625
+      date: '2026-11-13'
+      provided_by:
+      - http://geneontology.org
+    predicate: RO:0002407
+    downstream_activity: gomodel:6ab067da00015846/6ab067da00015980
+molecules:
+- id: gomodel:6ab067da00015846/6ab067da00017713
+  term: MGI:MGI:1339755
+- id: gomodel:6ab067da00015846/6ab067da00015978
+  term: MGI:MGI:104565
+objects:
+- id: MGI:MGI:1339751
+  label: Csf3 Mmus
+  type: gocam:Object
+- id: GO:0005125
+  label: cytokine activity
+  type: gocam:Object
+- id: GO:0005576
+  label: extracellular region
+  type: gocam:Object
+- id: GO:0038158
+  label: granulocyte colony-stimulating factor signaling pathway
+  type: gocam:Object
+- id: MGI:MGI:1339755
+  label: Csf3r Mmus
+  type: gocam:Object
+- id: GO:0004902
+  label: granulocyte colony-stimulating factor receptor activity
+  type: gocam:Object
+- id: GO:0005886
+  label: plasma membrane
+  type: gocam:Object
+- id: CL:0000834
+  label: neutrophil progenitor cell
+  type: gocam:Object
+- id: MGI:MGI:103038
+  label: Stat3 Mmus
+  type: gocam:Object
+- id: GO:0001228
+  label: DNA-binding transcription activator activity, RNA polymerase II-specific
+  type: gocam:Object
+- id: GO:0005634
+  label: nucleus
+  type: gocam:Object
+- id: MGI:MGI:104565
+  label: Cdkn1b Mmus
+  type: gocam:Object
+- id: GO:0004861
+  label: cyclin-dependent protein serine/threonine kinase inhibitor activity
+  type: gocam:Object
+- id: GO:0045660
+  label: positive regulation of neutrophil differentiation
+  type: gocam:Object
+- id: ECO:0000315
+  label: mutant phenotype evidence used in manual assertion
+  type: gocam:Object
+- id: ECO:0000314
+  label: direct assay evidence used in manual assertion
+  type: gocam:Object
+provenances:
+- contributor:
+  - https://orcid.org/0000-0002-8075-8625
+  date: '2026-11-19'
+  provided_by:
+  - http://geneontology.org
+  - https://www.uniprot.org
