@@ -43,6 +43,34 @@ jobs:
           fi
           echo "scope ok: models/ only"
 
+      # The drop box takes NEW models only. An id that already has a file in
+      # noctua-models is a production model: it is edited in Noctua, and the
+      # promotion step refuses it anyway (filename collision). Checked per file
+      # through the contents API (models/ there is too large to list). 200 =
+      # exists, 404 = new; anything else fails, so an API error never passes a
+      # collision. Removal PRs (promoted-*) delete ids that are in production by
+      # definition, so maintenance branches are skipped, as above.
+      - name: New models only (id not already in noctua-models)
+        if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          case "${{ github.head_ref }}" in promoted-*|admin-*) echo "maintenance branch; production-id check skipped"; exit 0;; esac
+          git fetch --quiet origin "${{ github.base_ref }}"
+          IDS="$(git diff --name-only --diff-filter=AM "origin/${{ github.base_ref }}...HEAD" -- 'models/*.yaml' 'models/*.ttl' \
+                 | sed -E 's#^models/##; s/\.(yaml|ttl)$//' | sort -u || true)"
+          FAIL=0
+          for id in $IDS; do
+            code="$(gh api -i "repos/geneontology/noctua-models/contents/models/${id}.ttl?ref=master" 2>/dev/null | head -1 | awk '{print $2}' || true)"
+            case "$code" in
+              404) echo "new: $id" ;;
+              200) echo "::error::gomodel:$id already exists in noctua-models (production). The drop box accepts new models only: edit a production model in Noctua, or re-create the model on noctua-dev so it gets a new id (CONTRIBUTING.md)."; FAIL=1 ;;
+              *)   echo "::error::could not check $id against noctua-models (HTTP ${code:-none}); re-run the job."; FAIL=1 ;;
+            esac
+          done
+          [ "$FAIL" = 0 ] && echo "production-id check ok"
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
