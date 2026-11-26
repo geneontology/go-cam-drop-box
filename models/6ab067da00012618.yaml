@@ -3,7 +3,7 @@ title: Cav1.4-dependent glutamate release at the cone photoreceptor ribbon synap
   Perception (Human)
 taxon: NCBITaxon:9606
 status: development
-date_modified: '2026-11-24'
+date_modified: '2026-11-26'
 comments:
 - Curated with GO AI HUB. Cav1.4-dependent glutamate release at the cone photoreceptor
   ribbon synapse, to ON- and OFF-bipolar cells.
@@ -90,6 +90,26 @@ activities:
           provided_by:
           - http://geneontology.org
         term: CL:0000749
+        part_of:
+          type: GrossAnatomyAssociation
+          evidence:
+          - term: ECO:0000250
+            reference: GO_REF:0000024
+            with_objects:
+            - MGI:1351343
+            provenances:
+            - contributor:
+              - https://orcid.org/0000-0003-1522-9900
+              date: '2026-11-26'
+              provided_by:
+              - http://geneontology.org
+          provenances:
+          - contributor:
+            - https://orcid.org/0000-0003-1522-9900
+            date: '2026-11-26'
+            provided_by:
+            - http://geneontology.org
+          term: CL:0000752
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -184,31 +204,6 @@ activities:
     - type: ProteinComplexHasPartAssociation
       evidence:
       - term: ECO:0000314
-        reference: PMID:7536611
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0003-1522-9900
-          date: '2026-11-02'
-          provided_by:
-          - http://geneontology.org
-      - term: ECO:0000314
-        reference: PMID:32999066
-        provenances:
-        - contributor:
-          - https://orcid.org/0000-0003-1522-9900
-          date: '2026-11-02'
-          provided_by:
-          - http://geneontology.org
-      provenances:
-      - contributor:
-        - https://orcid.org/0000-0003-1522-9900
-        date: '2026-11-02'
-        provided_by:
-        - http://geneontology.org
-      term: UniProtKB:Q13002
-    - type: ProteinComplexHasPartAssociation
-      evidence:
-      - term: ECO:0000314
         reference: PMID:32999066
         provenances:
         - contributor:
@@ -231,6 +226,31 @@ activities:
         provided_by:
         - http://geneontology.org
       term: UniProtKB:P39086
+    - type: ProteinComplexHasPartAssociation
+      evidence:
+      - term: ECO:0000314
+        reference: PMID:7536611
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-11-02'
+          provided_by:
+          - http://geneontology.org
+      - term: ECO:0000314
+        reference: PMID:32999066
+        provenances:
+        - contributor:
+          - https://orcid.org/0000-0003-1522-9900
+          date: '2026-11-02'
+          provided_by:
+          - http://geneontology.org
+      provenances:
+      - contributor:
+        - https://orcid.org/0000-0003-1522-9900
+        date: '2026-11-02'
+        provided_by:
+        - http://geneontology.org
+      term: UniProtKB:Q13002
   molecular_function:
     type: MolecularFunctionAssociation
     term: GO:0015277
@@ -1122,10 +1142,13 @@ objects:
 - id: GO:0005246
   label: calcium channel regulator activity
   type: gocam:Object
+- id: CL:0000752
+  label: cone retinal bipolar cell
+  type: gocam:Object
 provenances:
 - contributor:
   - https://orcid.org/0000-0003-1522-9900
-  date: '2026-11-24'
+  date: '2026-11-26'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
