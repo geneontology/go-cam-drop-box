@@ -3,7 +3,7 @@ title: Cav1.4-dependent glutamate release at the rod photoreceptor ribbon synaps
   Perception (Human)
 taxon: NCBITaxon:9606
 status: development
-date_modified: '2026-11-24'
+date_modified: '2026-11-26'
 comments:
 - Curated with GO AI HUB. Cav1.4-dependent glutamate release at the rod photoreceptor
   ribbon synapse, from the rod terminal to the ON-bipolar dendrite.
@@ -249,7 +249,7 @@ activities:
           date: '2026-11-19'
           provided_by:
           - http://geneontology.org
-        term: CL:0000749
+        term: CL:0000751
   part_of:
     type: BiologicalProcessAssociation
     evidence:
@@ -845,8 +845,8 @@ objects:
 - id: GO:0044292
   label: dendrite terminus
   type: gocam:Object
-- id: CL:0000749
-  label: ON-bipolar cell
+- id: CL:0000751
+  label: rod bipolar cell
   type: gocam:Object
 - id: GO:0007216
   label: G protein-coupled glutamate receptor signaling pathway
@@ -875,7 +875,7 @@ objects:
 provenances:
 - contributor:
   - https://orcid.org/0000-0003-1522-9900
-  date: '2026-11-24'
+  date: '2026-11-26'
   provided_by:
   - http://geneontology.org
   - https://www.uniprot.org
